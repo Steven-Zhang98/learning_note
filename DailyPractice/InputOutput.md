@@ -25,7 +25,7 @@
 45
 
 ```
-
+## 答案
 ```python
 a,b = map(int,input().split())
 
