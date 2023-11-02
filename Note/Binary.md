@@ -6,13 +6,14 @@
 我们不妨大开脑洞设想一下，如何表示道路的更多种状态。比如提醒行车马上就要从红灯变成绿灯，以及重要国家领导出行，所有道路上的行车立即停止？
 我们可以再增加一组红绿灯，为了更方便的表达，我们对“双红绿灯”进行编码，红灯用 0 表示，绿灯用 1 表示，
 
-	那么  01 ,红绿灯,代表车辆可以通行
-
-![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202311022337963.png)
-	00 ,红红灯,代表两个都是红灯, 代表重要领导出行, 所有车道都不能通行
+	00 ,红红灯, 代表两个都是红灯, 代表重要领导出行, 所有车道都不能通行
 ![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202311022341874.png)
 
 
+
+	那么  01 ,红绿灯,代表车辆不能通行
+
+![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202311022337963.png)
 	11, 绿红灯，也代表警示灯，代表车灯马上就要变化
 
 ![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202311022342475.png)
