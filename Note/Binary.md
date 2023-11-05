@@ -1,2 +1,2 @@
+[教范范如何使用网页链接](https://github.com/Steven-Zhang98/PythonLearningNote/edit/main/Note/Binary.md)
 
-[链接](https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?gsiwebsdk=3&client_id=741522628706-7vi2fujgcb4mmul06o8isdb6on2lobui.apps.googleusercontent.com&scope=email%20profile&redirect_uri=https%3A%2F%2Fpoe.com%2Fgoogle_callback&prompt=consent&state=eyJwZXJtcyI6ICIiLCAiY3NyZiI6ICI3YmMzZTNjZjQ1Mzg0NWZiMzE1NDg3OTIyYTFmNDU2ZSIsICJwbGF0Zm9ybSI6ICJ3ZWIiLCAidGFyZ2V0IjogIiIsICJuZXh0X3VybCI6ICIvQ2hhdEdQVCJ9&access_type=offline&response_type=code&include_granted_scopes=false&enable_granular_consent=true&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow)
