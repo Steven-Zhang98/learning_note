@@ -1,4 +1,6 @@
-# Binary
+## Binary
+=======
+>>>>>>> 5dcb7ec558ba97af57464be6b8d4630b2e3c264c
 > In computers, all pictures, audio, and numbers are stored and manipulated in binary form like 01000101, so it's especially important for us to understand binary.
 ## Decimal vs Binary
 
