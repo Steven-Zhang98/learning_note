@@ -1,19 +1,19 @@
 	In computers, all pictures, audio, and numbers are stored and manipulated in binary form like 01000101, so it's especially important for us to understand binary.
 ## Decimal vs Binary
 
-在二进制中的 10 这个数，与十进制中的 10 这个数所表达的含义有哪些不同，有哪些相同？
+How is the number 10 in binary different from and the same as the meaning expressed by the number 10 in decimal?
 
 
-首先我们要知道，对于十进制而言，最大的能表示的数字是 9，而当 9 想继续往上递增时，9 就会变成 0，并往前进一位变成 10。而对于二进制来说，最大能表示的数字是 1，而 1 想往上递增时，1 就会变成 0，并往前进一位变成 10. 也就是说，无论哪种进制，一旦超过了该进制所能表达的最大值，那么个位数就会变成 0，十位数就会变成 1，比如在四进制中，3 再加上 1 就会变成 10，八进制中 7 再加上一个数字就会变成 10，十六进制中 f 再加上 1 就会变成 10.
+First of all, we need to know that for decimal, the maximum number that can be expressed is 9, and when 9 wants to go up, 9 becomes 0 and goes one place forward to 10, while for binary, the maximum number that can be expressed is 1, and when 1 wants to go up, 1 becomes 0 and goes one place forward to 10. That is to say, no matter what kind of decimal, once the maximum value of the number can be expressed, then the first digit becomes 0 and the tenth digit becomes 1. In other words, once the maximum value that can be expressed in any of the alphanumeric systems is exceeded, the first digit becomes 0 and the tenth digit becomes 1. For example, in quadrature, 3 plus 1 becomes 10, in octal, 7 plus a digit becomes 10, and in hexadecimal, f plus 1 becomes 10.
 
-那么我们可以提出一个规则，如果基数 = a
-也就是说，十位上的 1 （10）代表一共有 a 个数。相当于有 $a^1$ 个数。
+So we can propose a rule that if base = a
+That is, a 1 (10) in the tens place means that there are a total of a numbers. This is equivalent to $a^1$.
 
-那么，百位上的 1（100）就代表一共有 a 个个位上的数，相当于有 $a \times a$ ( $a ^ 2$ )个数。
+Then, 1 (100) in the hundreds place represents that there are a total of a digit numbers, which is equivalent to having $a \times a$ ( $a ^ 2$ ) numbers.
 
-在十进制中，每一位都代表 10 的不同幂次， Let's take a decimal like 422.
+In decimal, each digit represents a different power of 10, Let's take a decimal like 422.
 
-百位代表着 $10^2$ ,十位代表着 $10^1$ ,个位代表着 10^0 次方，
+The hundreds place represents $10^2$ , the tens place represents $10^1$ , and the ones place represents the 10^0 th power.
 
 | hundreds    | tens    | ones    |
 | ------- | ------- | ------- |
@@ -21,7 +21,7 @@
 | $4$   |  $2$  |  $2$  |
 
 $$422 = 4\times 10^2 + 2\times 10^1 +2\times 10^0 $$
-那么对于 222 这样的二进制数字而言
+So for a binary number like 222.
 
 |hundreds|tens| ones|
 | ---| ---|---|
@@ -35,7 +35,7 @@ $$222 = 2\times 2^2 + 2\times 2^1 +2\times 2^0 $$
 A bit 1 or 0, which is the smallest storage unit for numbers in a computer.
 ## What is the maximum amount of 32-bit int data that can be represented?
 
-那么对于 32bit 的数据而言，全部位上都表示 1 就是最大的数字，所以最大数字是
+So for 32 bit data, the largest number is when all the bits represent 1, so the largest number is
 
 $$ 1\times 2^{31} +1\times 2^{30} +1\times 2^{29} +\dots..$$
-$2^{32} - 1$
+$=2^{32} - 1$
