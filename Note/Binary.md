@@ -1,4 +1,6 @@
-	In computers, all pictures, audio, and numbers are stored and manipulated in binary form like 01000101, so it's especially important for us to understand binary.
+```
+In computers, all pictures, audio, and numbers are stored and manipulated in binary form like 01000101, so it's especially important for us to understand binary.
+```
 ## Decimal
 
 在十进制中，每一位上的数都代表 10 的幂次， Let's take a decimal like 422.
