@@ -6,14 +6,14 @@ How is the number 10 in binary different from and the same as the meaning expres
 
 First of all, we need to know that for decimal, the maximum number that can be expressed is 9, and when 9 wants to go up, 9 becomes 0 and goes one place forward to 10, while for binary, the maximum number that can be expressed is 1, and when 1 wants to go up, 1 becomes 0 and goes one place forward to 10. That is to say, no matter what kind of decimal, once the maximum value of the number can be expressed, then the first digit becomes 0 and the tenth digit becomes 1. In other words, once the maximum value that can be expressed in any of the alphanumeric systems is exceeded, the first digit becomes 0 and the tenth digit becomes 1. For example, in quadrature, 3 plus 1 becomes 10, in octal, 7 plus a digit becomes 10, and in hexadecimal, f plus 1 becomes 10.
 
-So we can propose a rule that if base = a
-That is, a 1 (10) in the tens place means that there are a total of a numbers. This is equivalent to $a^1$.
+So we can propose a rule that if base = b
+That is, a 1 (10) in the tens place means that there are a total of a numbers. This is equivalent to $b^1$.
 
-Then, 1 (100) in the hundreds place represents that there are a total of a digit numbers, which is equivalent to having $a \times a$ ( $a ^ 2$ ) numbers.
+Then, 1 (100) in the hundreds place represents that there are a total of a digit numbers, which is equivalent to having $b \times b$ ( $b ^ 2$ ) numbers.
 
 In decimal, each digit represents a different power of 10, Let's take a decimal like 422.
 
-The hundreds place represents $10^2$ , the tens place represents $10^1$ , and the ones place represents the 10^0 th power.
+The hundreds place represents $10^2$ , the tens place represents $10^1$ , and the ones place represents the $10^0$ .
 
 | hundreds    | tens    | ones    |
 | ------- | ------- | ------- |
