@@ -31,7 +31,7 @@ $$222 = 2\times 2^2 + 2\times 2^1 +2\times 2^0 $$
 
 #难点 *我尝试着解释为什么百位会等于 10 的二次幂，这样做的原因是当我介绍二进制时，我也可以同样引进幂的概念，但是问题是我发现我解释不了，搜集网上资料又引出了权这样的概念，我去查权这个概念，就发现更迷糊了。*
 
-## bit 的概念
+## The concept of bit
 
 A bit 1 or 0, which is the smallest storage unit for numbers in a computer.
 ## What is the maximum amount of 32-bit int data that can be represented?
