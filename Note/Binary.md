@@ -1,4 +1,4 @@
-	In computers, all pictures, audio, and numbers are stored and manipulated in binary form like 01000101, so it's especially important for us to understand binary.
+> In computers, all pictures, audio, and numbers are stored and manipulated in binary form like 01000101, so it's especially important for us to understand binary.
 ## Decimal vs Binary
 
 How is the number 10 in binary different from and the same as the meaning expressed by the number 10 in decimal?
