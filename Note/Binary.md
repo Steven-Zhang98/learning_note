@@ -1,12 +1,16 @@
-[教范范如何使用网页链接](https://github.com/Steven-Zhang98/PythonLearningNote/edit/main/Note/Binary.md)
+	In computers, all pictures, audio, and numbers are stored and manipulated in binary form like 01000101, so it's especially important for us to understand binary.
+## Decimal
 
-$2^4$
-```math
-1 (2)=1 \times 2^0 = 1 (10) 
-10 (2)=0 \times 2^0 + 1 \times 2^1 = 2 (10) 
-11 (2)=1 \times 2^0 + 1 \times 2^1 = 3 (10) 
-100 (2)=0 \times 2^0 + 0 \times 2^1 + 1 \times 2^2 = 4 (10) 
-101 (2)=1 \times 2^0 + 0 \times 2^1 + 1 \times 2^2 = 5 (10) 
-......
+在十进制中，每一位上的数都代表 10 的幂次， Let's take a decimal like 422.
 
-```
+| hundreds    | tens    | ones    |
+| ------- | ------- | ------- |
+| $10^2$  | $10^1$  | $10^0$  |
+| $4$   |  $2$  |  $2$  |
+
+
+## Decimal vs Binary
+
+
+
+## What is the maximum amount of 32-bit int data that can be represented?
