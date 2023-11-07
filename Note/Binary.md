@@ -42,4 +42,43 @@ A bit 1 or 0, which is the smallest storage unit for numbers in a computer.
 So for 32 bit data, the largest number is when all the bits represent 1, so the largest number is
 
 $$ 1\times 2^{31} +1\times 2^{30} +1\times 2^{29} +\dots..$$
+
+
 $=2^{32} - 1$
+
+# A new version I'd like to explain
+
+
+## Use the decimal system to discover patterns ##
+I would like to use a familiar example to explain what the maximum 32 bit binary number is, assuming we only have 1 bit of decimal data, then the maximum value is 9, if we have two bits of decimal data, then the maximum value is 99, if we have three bits of decimal data, then the maximum value is 999
+
+If we were to show the following process in a list, it would be
+
+|place|decimal value|simplified|
+|---|---|---|
+|1|9| 10-1|
+|2|99| 100 - 1|
+|3|999|1000 - 1|
+|4|9999|10000 - 1|
+|5|99999|100000 - 1|
+|6|999999|1000000 - 1|
+|7|9999999|10000000 - 1|
+|n|999999... N| $10^n-1$ |
+
+We can find a pattern that in decimal, assuming there are n digits, the maximum value that can be represented is $10^n-1$, and 10 denotes the number of digits, so I'm guessing if the binary number satisfies the $2^n-1$
+## Using binary to verify patterns
+
+To test my hypothesis, I'll use a chart 
+
+|位数|二进制的值|十进制的值|
+|---|---|---|
+|1|1| 1|
+|2|11| 3|
+|3|111|7|
+|4|1111|15|
+|5|11111|31|
+|6|111111|63|
+|7|1111111|127|
+|n|11111111... N| $2^n-1$ |
+
+We find that this pattern is satisfied, so the maximum value of a 32-bit binary number without taking into account the sign bit is $2^{32}-1$ by substituting in 32.
