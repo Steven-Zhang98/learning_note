@@ -54,7 +54,7 @@ I would like to use a familiar example to explain what the maximum 32 bit binary
 
 If we were to show the following process in a list, it would be
 
-|place|decimal value|simplified|
+|Number of digits|decimal value|simplified|
 |---|---|---|
 |1|9| 10-1|
 |2|99| 100 - 1|
@@ -70,7 +70,7 @@ We can find a pattern that in decimal, assuming there are n digits, the maximum 
 
 To test my hypothesis, I'll use a chart 
 
-|位数|二进制的值|十进制的值|
+|Number of digits|binary value|decimal value|
 |---|---|---|
 |1|1| 1|
 |2|11| 3|
