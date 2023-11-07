@@ -65,6 +65,7 @@ If we were to show the following process in a list, it would be
 |7|9999999|10000000 - 1|
 |n|999999... N| $10^n-1$ |
 
+
 We can find a pattern that in decimal, assuming there are n digits, the maximum value that can be represented is $10^n-1$, and 10 denotes the number of digits, so I'm guessing if the binary number satisfies the $2^n-1$
 ## Using binary to verify patterns
 
@@ -80,5 +81,7 @@ To test my hypothesis, I'll use a chart
 |6|111111|63|
 |7|1111111|127|
 |n|11111111... N| $2^n-1$ |
+#难点 
+如果我面对的是一个新手，自己还没有给他解释为什么二进制 111 就等于 7
 
 We find that this pattern is satisfied, so the maximum value of a 32-bit binary number without taking into account the sign bit is $2^{32}-1$ by substituting in 32.
