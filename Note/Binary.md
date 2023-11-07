@@ -4,6 +4,7 @@
 > In computers, all pictures, audio, and numbers are stored and manipulated in binary form like 01000101, so it's especially important for us to understand binary.
 ## Decimal vs Binary
 
+#review
 How is the number 10 in binary different from and the same as the meaning expressed by the number 10 in decimal?
 
 
@@ -32,8 +33,11 @@ So for a binary number like 222.
 
 $$222 = 2\times 2^2 + 2\times 2^1 +2\times 2^0 $$
 
-#难点 *我尝试着解释为什么百位会等于 10 的二次幂，这样做的原因是当我介绍二进制时，我也可以同样引进幂的概念，但是问题是我发现我解释不了，搜集网上资料又引出了权这样的概念，我去查权这个概念，就发现更迷糊了。*
+#flashcards/二进制 
+*我尝试着解释为什么百位会等于 10 的二次幂，这样做的原因是当我介绍二进制时，我也可以同样引进幂的概念，但是问题是我发现我解释不了，搜集网上资料又引出了权这样的概念，我去查权这个概念，就发现更迷糊了。:: 
 
+
+##1342
 ## The concept of bit
 
 A bit 1 or 0, which is the smallest storage unit for numbers in a computer.
@@ -81,7 +85,8 @@ To test my hypothesis, I'll use a chart
 |6|111111|63|
 |7|1111111|127|
 |n|11111111... N| $2^n-1$ |
-#难点 
-如果我面对的是一个新手，自己还没有给他解释为什么二进制 111 就等于 7
+#flashcards/二进制
+如果我面对的是一个新手，自己还没有给他解释为什么二进制 111 就等于 7？ ::
+
 
 We find that this pattern is satisfied, so the maximum value of a 32-bit binary number without taking into account the sign bit is $2^{32}-1$ by substituting in 32.
