@@ -37,7 +37,6 @@ $$222 = 2\times 2^2 + 2\times 2^1 +2\times 2^0 $$
 *我尝试着解释为什么百位会等于 10 的二次幂，这样做的原因是当我介绍二进制时，我也可以同样引进幂的概念，但是问题是我发现我解释不了，搜集网上资料又引出了权这样的概念，我去查权这个概念，就发现更迷糊了。:: 
 
 
-##1342
 ## The concept of bit
 
 A bit 1 or 0, which is the smallest storage unit for numbers in a computer.
@@ -85,6 +84,10 @@ To test my hypothesis, I'll use a chart
 |6|111111|63|
 |7|1111111|127|
 |n|11111111... N| $2^n-1$ |
+
+
+
+
 #flashcards/二进制
 如果我面对的是一个新手，自己还没有给他解释为什么二进制 111 就等于 7？ ::
 
