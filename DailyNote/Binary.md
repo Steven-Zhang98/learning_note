@@ -23,7 +23,6 @@ The hundreds place represents $10^2$ , the tens place represents $10^1$ , and th
 | ------- | ------- | ------- |
 | $10^2$  | $10^1$  | $10^0$  |
 | $4$   |  $2$  |  $2$  |
-
 $$422 = 4\times 10^2 + 2\times 10^1 +2\times 10^0 $$
 So for a binary number like 222.
 
