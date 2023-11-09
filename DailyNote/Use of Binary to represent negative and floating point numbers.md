@@ -11,7 +11,10 @@
 4. Arrange the remainders in reverse order (the remainder from the first step is the last one)
 This inverted sequence is the binary representation of a decimal number.
 Write the entire procedure in Python as follows:
+#key/代码 
 
+1
+?
 ```python
 binary_list = []
 
