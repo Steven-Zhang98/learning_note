@@ -1,4 +1,4 @@
-
+ 
 ## Working out negative binary values
 
 [](marginnote3app://note/587D69B2-21CE-411F-A555-AD0BCD1D591A)
@@ -39,6 +39,9 @@ binary_num = decimal_to_binary(decimal_num)
 print(binary_list)
 	
 ```
+
+^5aacf6
+
 ### Converting binary numbers to negative numbers
 
 
