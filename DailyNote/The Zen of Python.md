@@ -1,3 +1,11 @@
+---
+sr-due: 2023-11-10
+sr-interval: 1
+sr-ease: 230
+---
+
+#review 
+
 Beautiful is better than ugly.
 
 Explicit is better than implicit.
