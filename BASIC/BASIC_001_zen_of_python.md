@@ -17,11 +17,12 @@ Google is better than Baidu. StackOverflow is better than CSDN (This is shit!!)
 
 ## Beautiful is better than ugly.
 
-凡是好的东西，从审美的角度来看一定是美丽的。
+Let's see two examples and explore what beauty is.
 
 ```python
-
 def is_even(number):
+# Use the modulus operator (%) to check if a number is even
+# If the number is divisible by 2, then it is even
 	if number % 2 == 0:
 		return f"{number} is even"
 	else:
@@ -29,15 +30,20 @@ def is_even(number):
 	
 ```
 
-对比
+Compare to 
 
 ```python 
 def is_even(number):
+# Use the bitwise operator (&) to check if a number is even 
+# If the number is even, then the function will return false 
 	return (number & 1)
 ```
 
-从后面的代码中可以看出代码更加简短，执行效率更好，也让我意识到，“美”是需要对事物的有深刻认知的。
+The second code seems to be more "beautiful" in terms of simplicity and execution efficiency, but the second code uses the bitwise operator (&), which improves execution efficiency but may not be very friendly to readers who are not familiar with bitwise operations, and the code is not only for the machine to run, but also for people to read. A readable code makes it easier for teams to work together and maintain the code.
 
+Therefore, a "beautiful" code should balance readability and efficiency.
+
+For example, in performance-oriented development scenarios, we can use bitwise arithmetic and add comments to explain its use. But in teaching scenarios, we need to use the simplest language and examples that others can read and understand to explain complex concepts, and then we can use modulo arithmetic.
 ## Explicit is better than implicit.
 
 在对变量命名时，更直观的变量名优于不直观的变量名，比如 [[BASIC_004_ floating_point_numbers#^5aacf6|decimal_num 就比 num 好]]
