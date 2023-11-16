@@ -39,21 +39,32 @@ def is_even(number):
 	return (number & 1)
 ```
 
-The second code seems to be more "beautiful" in terms of simplicity and execution efficiency, but the second code uses the bitwise operator (&), which improves execution efficiency but may not be very friendly to readers who are not familiar with bitwise operations, and the code is not only for the machine to run, but also for people to read. A readable code makes it easier for teams to work together and maintain the code.
+The second code seems more "beautiful" regarding simplicity and execution efficiency. Still, the second code uses the bitwise operator (&), which improves execution efficiency but may need to be more friendly to readers unfamiliar with bitwise operations. The code is not only for the machine to run but also for people to read. A readable code makes it easier for teams to work together and maintain the code.
 
 Therefore, a "beautiful" code should balance readability and efficiency.
 
 For example, in performance-oriented development scenarios, we can use bitwise arithmetic and add comments to explain its use. But in teaching scenarios, we need to use the simplest language and examples that others can read and understand to explain complex concepts, and then we can use modulo arithmetic.
 ## Explicit is better than implicit.
 
-在对变量命名时，更直观的变量名优于不直观的变量名，比如 [[BASIC_004_ floating_point_numbers#^5aacf6|decimal_num 就比 num 好]]
-我们也可以借用
-有时候我们使用 alias 函数来帮助我们 [](marginnote3app://note/45BDD625-7848-46CB-8A76-F6B5DD347B0B)- 明确输入、输出参数的类型和名称可以更好的表达变量的用处 
+When we try to name a variable, clarifying the types and the names of input can better express the usefulness of the variable.
+
+```python
+from typing import TypeAlias
+
+def is_even(input_number:int):
+# Use the modulus operator (%) to check if a number is even
+# If the number is divisible by 2, then it is even
+	if input_number % 2 == 0:
+		return f"{input_number} is even"
+	else:
+		return f"{input_number} is odd"
+```
+Type annotations do not force the input_number type to be checked, but they can help developers understand the code better.
 
 
 ## Simple is better than complex.
 
-比如说， [[BASIC_003_binary#^34cdbc|判断一个数是否是偶数，利用& 1 计算就比 % 2 更好]]
+
 
 ## Complex is better than complicated.
 
