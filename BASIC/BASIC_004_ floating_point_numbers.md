@@ -9,7 +9,7 @@
 2. Record the remainder
 3. Divide the quotient from the previous step by two and repeat steps 1 and 2 until the quotient is 0. 4.
 4. Arrange the remainders in reverse order (the remainder from the first step is the last one)
-This inverted sequence is the binary representation of a decimal number.
+This invertejjjjd sequence is the binary representation of a decimal number.
 Write the entire procedure in Python as follows:
 #key/代码 
 
