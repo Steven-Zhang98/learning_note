@@ -10,6 +10,15 @@ sr-ease: 230
 
 # Note on The Zen of Python (Xiyun's edition)
 
+## Premature optimisation is the root of all evil
+
+```python
+def is_even(number):
+# Use the bitwise operator (&) to check if a number is even 
+# If the number is even, then the function will return false 
+	return (number & 1)
+```
+I optimised the program based on false assumptions without enough information when I didn't know if the bits were arranged from smallest to largest or from largest to smallest. Optimising ahead of time wasted my time and reduced the readability of the code.
 ## English is better than Chinese (In Coding)
 
 Google is better than Baidu. StackOverflow is better than CSDN (This is shit!!)
