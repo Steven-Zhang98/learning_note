@@ -64,7 +64,7 @@ Type annotations do not force the input_number type to be checked, but they can 
 
 ## Simple is better than complex.
 
-
+#key
 
 ## Complex is better than complicated.
 
