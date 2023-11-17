@@ -52,7 +52,7 @@ The second code seems more "beautiful" regarding simplicity and execution effici
 
 Therefore, a "beautiful" code should balance readability and efficiency.
 
-For example, in performance-oriented development scenarios, we can use bitwise arithmetic and add comments to explain its use. But in teaching scenarios, we need to use the simplest language and examples that others can read and understand to explain complex concepts, and then we can use modulo arithmetic.
+For example, we can use bitwise arithmetic in performance-oriented development scenarios and add comments to explain its use. In teaching scenarios and work environments, we should use simple language and examples to write code. This approach helps explain complex concepts, such as modulo arithmetic, and ensures the code's readability and maintainability.
 ## Explicit is better than implicit.
 
 When we try to name a variable, clarifying the types and the names of input can better express the usefulness of the variable.
