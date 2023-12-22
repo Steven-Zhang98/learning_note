@@ -1,13 +1,10 @@
 ---
-sr-due: 2023-11-10
+sr-due: 2023-11-30
 sr-interval: 1
-sr-ease: 230
+sr-ease: 210
+tags:
+  - CS
 ---
-
-#review 
-
-----
-
 # Note on The Zen of Python (Xiyun's edition)
 
 ## Premature optimisation is the root of all evil
@@ -73,7 +70,7 @@ Type annotations do not force the input_number type to be checked, but they can 
 
 ## Simple is better than complex.
 
-#key
+
 
 ## Complex is better than complicated.
 
