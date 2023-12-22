@@ -11,7 +11,7 @@
 4. Arrange the remainders in reverse order (the remainder from the first step is the last one)
 This invertejjjjd sequence is the binary representation of a decimal number.
 Write the entire procedure in Python as follows:
-#key/代码 
+
 
 如何写一个将十进制转换成二进制的函数
 ?
