@@ -12,9 +12,9 @@ new_position = [1,4]
 print(dog_name, "moved from", dog_position,"to position", new_position)
 ```
 
-This code creates two dogs on the game map. You set their names and positions at the beginning and can later move them to different positions.
+This code creates two dogs on the game map. I set their names and positions at the beginning and can later move them to different positions.
 
-Because the dog 1 and dog 2 use the same vairable dog_name and dog_position, so when we create the dog 2, the dog_name and dog_position will change from dog 1's name and position and dog'2 name and position. This is called variable reuse. But if we reuse the variable, The position updates and the movements of the dogs can not be interactive.
+Because dog 1 and dog 2 use the same variable dog_name and dog_position, when we create dog 2, the dog_name and dog_position will change from dog 1's name and position and dog'2 name and position. This is called variable reuse. But if we reuse the variable, The position updates and the movements of the dogs can not be interactive.
 
 To make this code more dynamic and capable of handling multiple dogs without overwriting, one approach could be to use a list or a dictionary to store each dog's details.
 
