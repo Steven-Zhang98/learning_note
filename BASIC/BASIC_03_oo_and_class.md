@@ -3,16 +3,16 @@
 So, I use the simplest method to create two dogs.
 ```python
 dog_name = "dog1"
-dog_position = [1,1]
+dog_position = [1, 1]
 print(dog_name, "born at position", dog_position)
-new_position = [1,3]
-print(dog_name, "moved from", dog_position,"to position", new_position)
+new_position = [1, 3]
+print(dog_name, "moved from",  dog_position, "to position",  new_position)
 
 dog_name = "dog2"
 dog_position = [1,1]
 print(dog_name, "born at position", dog_position)
 new_position = [1,4]
-print(dog_name, "moved from", dog_position,"to position", new_position)
+print(dog_name, "moved from", dog_position, "to position", new_position)
 ```
 
 This code creates two dogs on the game map. I set their names and positions at the beginning and can later move them to different positions.
@@ -42,11 +42,11 @@ So, I created a dog class; adding new information to the class is very convenien
 ```python
 class Dog:
 
-def __init__(self, name:str,position:list):
+	def __init__(self, name:str,position:list):
 
-self.m_name = name
+	self.m_name = name
 
-self.m_position = position
+	self.m_position = position
 
 dog1 = Dog("fanfan",[1,2],24)
 
@@ -61,7 +61,7 @@ What if I don't just want to create a dog, I want to create a cat class, bird cl
 I decided to find the common characteristics in those classes. I found there are all animals, and all of them have names and positions. 
 
 ```python
-cl、、ass Animal:
+class Animal:
     def __init__(self,name:str,position:list):
         self._m_name = name
         self._m_position = position
@@ -153,8 +153,8 @@ cat1.meow()
 
 human_xixi = Human("xixi",[1,1],dog1)
 human_xixi.move([22,33],dog1)
-
-dog1.encounter(human_xixi)```
+dog1.encounter(human_xixi)
+```
 
 
 ## Is-a and Has-a
