@@ -61,172 +61,111 @@ What if I don't just want to create a dog, I want to create a cat class, bird cl
 I decided to find the common characteristics in those classes. I found there are all animals, and all of them have names and positions. 
 
 ```python
-class Animal:
+cl、、ass Animal:
+    def __init__(self,name:str,position:list):
+        self._m_name = name
+        self._m_position = position
 
-def __init__(self,name:str,position:list):
+    def get_name(self):
+        return self._m_name
+    
+    def get_position(self):
+        return self._m_position
+    
+    def move(self,new_position:list):
+        print(self._m_name,"born at",self._m_position,"is moving to",new_position)
+        self._m_position = new_position
 
-self.__m_name = name
 
-self.__m_position = position
+class Human:
+    def __init__(self, name: str, position: list,pet:Animal):
+        self._m_name = name
+        self._m_position = position
+        self._m_pet = pet
+        print(f"{self._m_name} has a {self._m_pet.get_name()}")
 
-  
-
-def get_name(self):
-
-return self.__m_name
-
-def get_position(self):
-
-return self.__m_position
-
-def move(self,new_position:list):
-
-print(self.__m_name,"born at",self.__m_position,"is moving to",new_position)
-
-self.__m_position = new_position
-
-  
-
-class Human(Animal):
-
-def __init__(self, name: str, position: list,pet:Animal):
-
-super().__init__(name, position)
-
-self.__m_pet = pet
-
-print(f"{self.get_name()} has a {self.__m_pet.get_name()}")
-
-  
-
-def move(self, new_position: list,other:Animal):
-
-super().move(new_position)
-
-other.move(new_position)
-
+    def move(self, new_position: list,other:Animal):
+        print(self._m_name,"born at",self._m_position,"is moving to",new_position)
+        self._m_position = new_position
+        print(f"{other.get_name()} bron at {other.get_position()} is moving to {new_position}")
+        other.get_position = new_position
+    
 class Cat(Animal):
+    def __init__(self, name: str, position: list):
+        super().__init__(name, position)
 
-def __init__(self, name: str, position: list):
-
-super().__init__(name, position)
-
-  
-
-def meow(self):
-
-print("miao! miao !miao!")
-
-  
+    def meow(self):
+        print("miao! miao !miao!")
 
 class Dog(Animal):
+    def __init__(self, name:str,position:list, age:int):
+        super().__init__(name,position)
+        self.__m_age = age
+        print(f"hello everyone,my name is {self.get_name()}")
 
-def __init__(self, name:str,position:list, age:int):
+    def get_age(self):
+        return self.__m_age
 
-super().__init__(name,position)
+    def bark(self):
+        print("Wang! Wang!")
 
-self.__m_age = age
+    def wagtail(self):
+        print(f"{self.get_name()} is wag his tail!")
 
-print(f"hello everyone,my name is {self.get_name()}")
 
-  
+    def encounter(self,other:Animal):
+        if isinstance(other,Cat):
+            self.bark()
+        elif isinstance(other,Human):
+            self.wagtail()
+        else:
+            print(f"{self.get_name()} sees another animal but remains calm.")
 
-def get_age(self):
 
-return self.__m_age
+class Superdog(Dog):
+    def __init__(self, name: str, position: list, age: int,star:int):
+        super().__init__(name, position, age) 
+        self._m_star = star
 
-  
-
-def bark(self):
-
-print("Wang! Wang!")
-
-  
-
-def wagtail(self):
-
-print(f"{self.get_name()} is wag his tail!")
-
-  
-  
-
-def encounter(self,other:Animal):
-
-if isinstance(other,Cat):
-
-self.bark()
-
-elif isinstance(other,Human):
-
-self.wagtail()
-
-else:
-
-print(f"{self.getter_name()} sees another animal but remains calm.")
-
-  
-  
-
-class Super_dog(Dog):
-
-def __init__(self, name: str, position: list, age: int,star:int):
-
-super().__init__(name, position, age)
-
-self.__m_star = star
-
-  
-
-def get_star(self):
-
-return self.__m_star
-
-def show(self):
-
-print(f"{self.get_name()} have {self.get_star()} super power")
-
-def bark(self):
-
-super().bark()
-
-print("super dog can bark all the times")
-
-  
+    def get_star(self):
+        return self._m_star
+    
+    def show(self):
+        print(f"{self.get_name()} have {self.get_star()} super power")
+    
+    def bark(self):
+        super().bark()
+        print("super dog can bark all the times")
 
 dog1 = Dog("fanfan",[1,2],24)
-
 print(dog1.get_name(),"bron at",dog1.get_position(),"age is",dog1.get_age())
-
 dog1.move([2,5])
-
 dog1.bark()
 
-  
-
-dog2 = Super_dog("xixi",[1,2],25,5)
-
+dog2 = Superdog("xixi",[1,2],25,5)
 print(dog2.get_name(),"bron at",dog2.get_position(),"age is",dog2.get_age())
-
 dog2.move([3,4])
-
 dog2.show()
-
 dog2.bark()
 
-  
-
 cat1 = Cat("haha",[1,4])
-
 cat1.meow()
 
-  
-
 human_xixi = Human("xixi",[1,1],dog1)
-
 human_xixi.move([22,33],dog1)
 
-  
+dog1.encounter(human_xixi)```
 
-dog1.encounter(human_xixi)
-```
+
+## Is-a and Has-a
+I created the Animal class, and the dog and cat class is inherited from the animal class. I created the human class separately because humans are not animals; humans have animals. 
+
+## polymorphism
+
+I created the super-dog class, which is inherited from the dog class. The super dog's bark method is overridden because I want to show the difference between the dog and super dog classes.
+
+## Interaction between instances
+
+I created an encounter method to show how the instances these classes reacted to each other.
+
 
