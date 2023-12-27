@@ -1,51 +1,75 @@
-0 1 1 2 3 5 8 13 ...
-
-An = An-1 + An-2
-## For 
-
 ```python
-def fbn(num):
-	num_0 = 0
-	num_1 = 1
-	if num == 0:
-		return 0
-	if num == 1:
-		return 1
-	else:
-		i = num - 1
-		while i > 0:
-		result = num_0 + num_1
-		num_1 = result
-		num_0 = num_1
-		i -= 1 
-	return result
-print(fbn(10))
-```
-如何储存 An-2 和 An - 1 的值并把他赋给 An？
-
-上一步求出来的 a 会作为下一步的参数穿进去，再加上，上上一步传入的 a，所以我们要引出一个新的变量
-result = j
-
-什么是变量？
-## 递归
-
-```python
-def fbn(num):
-	if num <= 1
-		return num
-	else:
-		num_n = fbn(num-1) + fbn(num-2)
+def fib(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+        
+    # n>=2
+    return fib(n-1) + fib(n-2)
+    
+result = fib(9)
+print("Fib result:", result)
 ```
 
-[[实现斐波那契数列过程中，记忆容量不足导致推不出规律，最后用写在纸上解决]]
+Recursion is a very interesting concept in coding. Because recursive consists of two parts. One is the base case, which doesn't need to recursion. The other is the recursive case, which shows the relationship between the f (n) and f (n-1) and f (n-2). F (0) and f (1) are the start of the Fibonacci sequence but are also the start of return the result.
 
-[[斐波那契数列是张老师对循环和递归的理解，如何形成自己的理解]]
+Take fib (4) as an example, showing how recursion works. There are two steps. 
 
-## 中间变量
+### Call the function. 
+When we try to calculate fib (4), we have to calculate fib (3) and fib (2).
 
-Stackoverflow
+For fib (3), it is further necessary to compute fib (2) and fib (1). 
 
-Temporary variable
+For fib (2), it is further necessary to compute fib (1) and fib (0).
 
-Function call
+### Return the results 
 
+Once we calculate the fib (2),  we return it to fib (3), and then we can calculate fib (2). And repeat it again. 
+## Convert to Iterative
+
+```python
+def fib(n):
+    num_0 = 0
+    num_1 = 1
+    # num_2 = num_1 + num_0
+    # num_3 = num_2 + num_1
+    # num_4 = num_3 + num_2
+    # num_5 = num_4 + num_3
+    if n == 0:
+        return num_0
+    elif n == 1:
+        return num_1
+    else:
+        for i in range(2,n+1):
+            sum = num_0 + num_1
+            num_0 = num_1
+            num_1 = sum
+        return sum
+print(fib(4))
+```
+
+The number of cycles is n- 2 because literation starts from 2, so the range is (2,n), because the sequence does not include the second parameter, so the range is (2, n+1)
+
+## Recursion VS literation
+
+If we want to write code on small microcontrollers that don't have too much memory, iteration is more beneficial than recursion. 
+
+## Optimise Recursion with Memoization
+
+```python
+def fib(n, memo={}):
+    if n in memo:
+        return memo[n]
+    if n <= 1:
+        return n
+
+    memo[n] = fib(n - 1, memo) + fib(n - 2, memo)
+    return memo[n]
+
+print(fib(9))  # Example usage
+```
+
+I find some Repeated calculation steps in traditional recursion. What if we can store some Intermediate results? Our code could be more effective.
+
+The first step is to ensure a shared dictionary among all fib function calls.
