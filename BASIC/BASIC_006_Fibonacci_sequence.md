@@ -74,4 +74,20 @@ I found some repeated calculation steps in traditional recursion. What if we can
 
 The first step is to ensure a shared dictionary among all fib function calls. If we define a dictionary in function arguments, the dictionary will only be determined once.
 
-Whenever we find a new number not included in the dictionary, it will store the result in this shared memo dictionary and return it to the calculation of the upper level.
+Whenever we find a new number not included in the dictionary, it will store the result in this shared memo dictionary and Pass the memo dictionary to each recursive call.
+
+## Optimise Iteration in Memoization
+
+```python
+def fib(n,memo = {}):
+    memo[0] = 0
+    memo[1] = 1
+    if n in memo:
+        return memo[n]
+    else:
+        for i in range(2,n+1):
+            memo[i] = memo[i-1] + memo[i-2]
+        return memo[n]
+```
+
+## Real-World Application
