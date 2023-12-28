@@ -91,3 +91,28 @@ def fib(n,memo = {}):
 ```
 
 ## Real-World Application
+```python
+def investment_growth_model(n, j, initial_values):
+    memo = {i: initial_values[i] for i in range(j)}
+    
+    def calculate_growth(current_n):
+        if current_n in memo:
+            return memo[current_n]
+
+        total = 0
+        for i in range(1, j + 1):
+            total += calculate_growth(current_n - i)
+        
+        memo[current_n] = total
+        return total
+
+    if n < j:
+        return initial_values[n]
+    
+    return calculate_growth(n)
+
+# Example usage
+initial_values = [100, 110, 120]  # Example initial values for intervals 0, 1, 2
+print(investment_growth_model(5, 3, initial_values))
+
+```
