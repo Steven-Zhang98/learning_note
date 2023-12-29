@@ -16,14 +16,14 @@ Recursion is an exciting concept in coding. Because recursive consists of two pa
 
 Take fib (4) as an example, showing how recursion works. There are two steps. 
 
-### Call the function. 
+### (1) Call the function. 
 When we try to calculate fib (4), we have to compute fib (3) and fib (2).
 
 For fib (3), it is further necessary to compute fib (2) and fib (1). 
 
 For fib (2), it is further necessary to compute fib (1) and fib (0).
 
-### Return the results 
+### (2) Return the results 
 
 Once we calculate the fib (2),  we return it to fib (3), and then we can calculate fib (2). And repeat it. 
 ## Convert to Iterative
