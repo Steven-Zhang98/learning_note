@@ -92,7 +92,7 @@ def fib(n,memo = {}):
 
 ## Real-World Application
 
-Suppose we working on software for financial markets, and you need to analyse investment patterns. One of your tasks is to predict the growth of investments based on certain recursive patterns, similar to the Fibonacci sequence, where future values depend on the sum of a number of previous values.
+Suppose we working on software for financial markets, and we need to analyse investment patterns. One of your tasks is to predict the growth of investments based on certain recursive patterns, similar to the Fibonacci sequence, where future values depend on the sum of a number of previous values.
 
 ```python
 def investment_growth_model(n, j, initial_values):
@@ -119,3 +119,6 @@ initial_values = [100, 110, 120]  # Example initial values for intervals 0, 1, 2
 print(investment_growth_model(5, 3, initial_values))
 
 ```
+
+## Stack and Heap Memory
+
