@@ -123,5 +123,12 @@ print(investment_growth_model(5, 3, initial_values))
 ```
 
 This function has two parts: one is the outer function used to initialise the dictionary and set up the logic. The second part is recursion, which calls itself to summing the growth values of previous intervals up to 'j' intervals back. And check if the current interval is in the dictionary. If not in the dictionary, it computes the values and adds them to the dictionary, and then return it.
-## Stack and Heap Memory
+## Stack Heap Memory And Concert Stage
 
+Imagine there are performers, a stage, and a scoreboard on the concert stage. Memory is the stage, the stack is the performers, and the dictionary is the scoreboard stored in the heap. 
+
+Every time we call a function, a performer will go to the stage, Since this is a recursive function, n dancers will be called to the stage, and only after the nth dancer finishes and exits the stage will the n-1 th dancer begin to perform. 
+
+But gathering many performers on the stage will overwhelm the stage, called the stackoverflow. 
+
+The scoreboard is shared with every performer and records every performer's score. When nobody is using the scoreboard, the scoreboard will be taken away. 
