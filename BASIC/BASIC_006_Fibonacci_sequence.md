@@ -12,7 +12,7 @@ result = fib(9)
 print("Fib result:", result)
 ```
 
-Recursion is an exciting concept in coding. Because recursive consists of two parts. One is the base case, which doesn't need to recursion. The other is the recursive case, which shows the relationship between the f (n) and f (n-1) and f (n-2). F (0) and f (1) are the start of the Fibonacci sequence but are also the start of returning the result.
+Recursion is an exciting concept in coding. Because recursive consists of two parts. One is the base case, which doesn't need to recursion. The other is the recursive case, which shows the relationship between the f (n) and f (n-1) and f (n-2). f (0) and f (1) are the start of the Fibonacci sequence but are also the start of returning the result.
 
 Take fib (4) as an example, showing how recursion works. There are two steps. 
 
@@ -120,6 +120,6 @@ print(investment_growth_model(5, 3, initial_values))
 
 ```
 
-This function has two parts: one is the outer function used to initialise the dictionary and set up the logic. The second part is recursion, which calls itself to summing the growth values of previous intervals up to 'j' intervals back. And check if the current interval is in the dictionary. If not in the dictionary, it computes the values, and adds them to the dictionary, and then return it.
+This function has two parts: one is the outer function used to initialise the dictionary and set up the logic. The second part is recursion, which calls itself to summing the growth values of previous intervals up to 'j' intervals back. And check if the current interval is in the dictionary. If not in the dictionary, it computes the values and adds them to the dictionary, and then return it.
 ## Stack and Heap Memory
 
