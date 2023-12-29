@@ -91,6 +91,9 @@ def fib(n,memo = {}):
 ```
 
 ## Real-World Application
+
+Suppose we working on software for financial markets, and you need to analyse investment patterns. One of your tasks is to predict the growth of investments based on certain recursive patterns, similar to the Fibonacci sequence, where future values depend on the sum of a number of previous values.
+
 ```python
 def investment_growth_model(n, j, initial_values):
     memo = {i: initial_values[i] for i in range(j)}
