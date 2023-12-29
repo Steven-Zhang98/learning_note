@@ -25,7 +25,7 @@ For fib (2), it is further necessary to compute fib (1) and fib (0).
 
 ### (2) Return the results 
 
-Once we calculate the fib (2),  we return it to fib (3), and then we can calculate fib (2). And repeat it. 
+Once we calculate the fib (2),  we return it to fib (3), and then we can calculate fib (3). And repeat it. 
 ## Convert to Iterative
 
 ```python
