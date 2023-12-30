@@ -42,7 +42,7 @@ So, I created a dog class; adding new information to the class is very convenien
 ```python
 class Dog:
 
-	def __init__(self, name:str,position:list):
+    def __init__(self, name:str,position:list):
 
 	self.m_name = name
 
