@@ -18,6 +18,9 @@ def investment_growth_model(n,j,initial_sequence)
 
 ## memory stack
 
+![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202401022200284.png)
+
+
 ## 作用域(out of scope)
 
 ## 栈溢出 stack overflow
