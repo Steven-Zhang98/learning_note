@@ -31,6 +31,6 @@ Def add (a, b):
 When add is called, a stack frame is created for it. The local variable result is stored in this frame. Once add finishes executing, its stack frame, including the result variable, is automatically removed from the stack.
 ## 作用域(out of scope)
 
-## 栈溢出 stack overflow
+## 栈溢出 stack overf
 
 ## 什么是内存堆 memory heap
