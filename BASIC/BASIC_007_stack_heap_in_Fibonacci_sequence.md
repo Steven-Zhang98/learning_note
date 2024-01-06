@@ -44,7 +44,7 @@ Heap memory is a flexible memory structure for storing data structures like dict
 
 ## Heap Memory vs. Stack Memory
 
-Different usage: Stack memory is used for storing variables and functions, and heap memory is used for storing dynamic size data structure. 
+Different usage: Stack memory is used for storing variables and functions, and heap memory is used for storing dynamic size data structure. So stack variables are limited to the scope of the function, but heap variables have a lifetime that can extend beyond the function scope. 
 
 Different structure: Stack memory is a LIFO structure; every time we call a function, he pushes the function into the stack, and when the function is finished, the function pops out of the stack. However, the heap memory is more flexible since he can change its size easily. And heap memory will deallocate objects that are no longer used automatically (In Python).
 
@@ -59,6 +59,6 @@ while True:
 
 ```
 
-Scope and Lifetime: 
 
+![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202401061628343.png)
 
