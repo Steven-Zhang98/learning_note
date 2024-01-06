@@ -63,3 +63,5 @@ if __name__ == "__main__":
     print("done")
 
 ```
+
+ArrayList has two member variables: size, which represents the number of elements the ArrayList actually contains at the moment, and size - 1 is the last element index in ArrayList. The other one is capacity, representing the total number of elements the ArrayList can hold. Len (self. M_array) represents the array's capacity. 
