@@ -78,3 +78,69 @@ We must check if there is enough capacity (`size < capacity`) before we add new 
 When we want to delete the elements in the list, we find the element's index and set it to none and size minus 1. 
 
 ![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202401071036439.png)
+
+## Upgraded
+
+```python
+class ArrayList:
+    def __init__(self) :
+        self.m_size = 0
+        self.m_list = [None] * 2   
+    
+    def add(self,val):
+        if self.m_size >= len(self.m_list):
+            print("ArrayList auto resizing")
+            new_list = [None] * (len(self.m_list) * 2)
+            for i in range(len(self.m_list)):
+                new_list[i] = self.m_list[i]
+            self.m_list = new_list 
+
+        self.m_list[self.m_size] = val
+        self.m_size += 1
+
+    def delete(self,idx):
+        if idx < 0 or idx >= self.m_size:
+            print("Please input the correct index") 
+        else:
+            for i in range(idx,self.m_size - 1):
+                self.m_list[i] = self. m_list[i + 1]
+            self.m_list[self.m_size - 1] = None
+            self.m_size -= 1
+        
+        if self.m_size < len(self.m_list) // 2:
+            new_list = [None] * (len(self.m_list) // 2)
+            for i in range(self.m_size):
+                new_list[i] = self.m_list[i]
+            self.m_list = new_list
+            print("Array auto resizing")
+        print("Delete successful")
+
+    def size(self):
+        return self.m_size
+
+    def get(self,idx):
+        if idx < 0 or idx >= self.m_size:
+            print("Please input the correct index")
+        return self.m_list[idx]    
+
+if __name__ == "__main__":
+    array_list = ArrayList() 
+    array_list.add(1)
+    array_list.add(2)
+    array_list.add(3)
+    array_list.add(4)
+    print(array_list.get(3))
+    print(f"array_list size is : {array_list.size()}")
+    array_list.add(5)
+    array_list.add(6)
+    array_list.add(7)
+    array_list.add(8)
+    array_list.add(9)
+    array_list.delete(0)
+    array_list.delete(0)
+    array_list.delete(0)
+    array_list.delete(0)
+    array_list.delete(0)
+    array_list.delete(0)
+    
+```
