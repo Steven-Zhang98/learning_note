@@ -64,4 +64,17 @@ if __name__ == "__main__":
 
 ```
 
+ArrayList can adjust its size dynamically because it distinguishes between the capacity of a list and its actual size. 
+
 ArrayList has two member variables: size, which represents the number of elements the ArrayList actually contains at the moment, and size - 1 is the last element index in ArrayList. The other one is capacity, representing the total number of elements the ArrayList can hold. Len (self. M_array) represents the array's capacity. 
+
+![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202401071033782.png)
+
+
+We must check if there is enough capacity (`size < capacity`) before we add new elements to the ArrayList. When the list has been filled, we create a new list and double its length. And add the original elements to the new list. 
+
+![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202401071035518.png)
+
+When we want to delete the elements in the list, we find the element's index and set it to none and size minus 1. 
+
+![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202401071036439.png)
