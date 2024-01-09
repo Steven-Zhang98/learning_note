@@ -144,3 +144,10 @@ if __name__ == "__main__":
     array_list.delete(0)
     
 ```
+
+### Member variable and avoiding IndexError
+
+Understanding the meaning of `m_size` is crucial for avoiding IndexError. 
+
+1. `m_size` defines the valid index range. My size means the number of elements actually stored in the ArrayList at the moment. This is means that any valid index must be in the range 0 to size - 1. 
+2. In get method, 
