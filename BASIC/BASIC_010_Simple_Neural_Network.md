@@ -10,9 +10,11 @@ We want to simulate a function like this:
 
 $2. t = 2x + 1$
 
-We suppose $w = 5$, and we enter an x (e.g., 2) value into Equation 2 up to the `t` value of 5. Enter an x value into Equation 2 up to the y value of 11 (This is what we call Forward Propagation).  
+Forward Propagation: We suppose $w = 5$, and we enter an x (e.g., 2) value into Equation 2 up to the `t` value of 5. Enter an x value into Equation 2 up to the y value of 11 .  
 
-When we compare the 11 and the 5, we find that 11 is bigger than 5, so we reduce $w$ to 4. This is what we call backward propagation.
+Backward Propagation: When we compare the 11 and the 5, we find that 11 is bigger than 5, so we reduce $w$ to 4. 
+
+
 
 
 ```python
