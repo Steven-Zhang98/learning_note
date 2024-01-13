@@ -9,7 +9,7 @@ class ArrayList:
         self.m_size = 0
         print(f"ArrayList init size: {len(self.m_array)}")
 
-    def add(self, val):
+    def append(self, val):
         if self.m_size >= len(self.m_array):
             print("auto resizing")
             new_array = [None] * (len(self.m_array) * 2)
