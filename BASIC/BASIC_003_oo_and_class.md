@@ -12,7 +12,7 @@ dog_name = "dog2"
 dog_position = [1,1]
 print(dog_name, "born at position", dog_position)
 new_position = [1,4]
-print(dog_name, "moved from", dog_position, "to position", new_position)
+print(dog_name, "moved from", dog_position, "to position", new_position) 
 ```
 
 This code creates two dogs on the game map. I set their names and positions at the beginning and can later move them to different positions.
