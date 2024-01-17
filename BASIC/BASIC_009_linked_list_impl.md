@@ -36,7 +36,7 @@ class LinkedList:
         while current:
             print(current.get_val(), end=" ")
             current = current.get_next()
-        print()
+  t      print()
 
 
 # Testing the LinkedList class
