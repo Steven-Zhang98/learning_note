@@ -44,9 +44,9 @@ class SimpleNeuralNetwork:
         self.forward()
         weight_gradient = self.backward()
         self.weight -= learning_rate * weight_gradient
-
+	--去
 # 创建一个简单的神经网络实例
-simple_net = SimpleNeuralNetwork(input_value=2, weight=3, bias=1, target=4)
+simple_net = SimpleNeuralNetwork(input_value=2, weight=3, bias=1, target=4)--
 
 # 打印初始状态
 print("Initial state:")j
