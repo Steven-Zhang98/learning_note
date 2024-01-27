@@ -11,12 +11,8 @@
             "id": "c13830467c96f58a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BASIC/BASIC_010_simple_neural_network.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "BASIC/BASIC_010_simple_neural_network.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "BASIC/BASIC_010_simple_neural_network.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -113,9 +107,7 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "BASIC/BASIC_010_simple_neural_network.md"
-          }
+          "state": {}
         }
       }
     ],
@@ -123,16 +115,17 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
   "active": "c13830467c96f58a",
   "lastOpenFiles": [
+    "BASIC/about_the_importance_of_interview.md",
     "BASIC/BASIC_012_how_to_interactive_learning.md",
     "BASIC/BASIC_003_binary.md",
     "README.md",
