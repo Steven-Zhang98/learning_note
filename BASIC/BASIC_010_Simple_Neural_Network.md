@@ -7,7 +7,7 @@ If we have a function like this :
  $1. y = wx + 1$
 
 We want to simulate a function like this:
-
+1
 $2. t = 2x + 1$
 
 We suppose $w = 5$, and we enter an x (e.g., 2) value into Equation 1 up to the `y` value of 11. 
