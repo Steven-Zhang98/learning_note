@@ -56,4 +56,11 @@ if __name__ == "__main__":
 
 ```
 
- 
+## Fundamental Components
+
+## Member Variables Reasoning
+
+## Insertion
+
+## Conclusion
+
