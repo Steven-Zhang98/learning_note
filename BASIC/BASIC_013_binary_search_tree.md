@@ -5,8 +5,11 @@ mindmap-plugin: basic
 # Sub title
 
 ## Reasoning
-- The definition of binary search tree
+- Understanding a Binary Search Tree
 	- data structure
+		- lookup
+		- addtion
+		- removal
 	- node
 		- value
 		- two children
@@ -14,6 +17,14 @@ mindmap-plugin: basic
 		- left subtree
 		- node's value
 		- right subtree
+	- BST property be maintained
+		- Class node
+- Problem: Inserting a New Value into the BST
+	- BST's property
+		- star at root
+		- 新节点
+- Problem: Searching for a Value in the BST
+- Problem: Traversing the BST
 
 ## The definition of the binary search tree
 - Code ^24d2376b-d6a1-7f23
