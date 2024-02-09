@@ -8,12 +8,12 @@ mindmap-plugin: basic
 - Understanding a Binary Search Tree
 	- data structure
 		- lookup
-		- addtion
+		- addition
 		- removal
 	- node
 		- value
 		- two children
-	- key preperty
+	- key property
 		- left subtree
 		- node's value
 		- right subtree
@@ -22,31 +22,32 @@ mindmap-plugin: basic
 - Problem: Inserting a New Value into the BST
 	- BST's property
 		- star at root
-		- 新节点
+		- left child
+		- right child
+		- repeat
 - Problem: Searching for a Value in the BST
 - Problem: Traversing the BST
 
 ## The definition of the binary search tree
 - Code ^24d2376b-d6a1-7f23
 
-	-
-	  ```python
-	  class TreeNode:
-	  def __init__(self, val):
+  ```python
+class TreeNode:
+	def __init__(self, val):
 	  self.val = val
 	  self.left = None
 	  self.right = None
 	  
-	  class BinarySearchTree:
-	  def __init__(self, root_val):
+class BinarySearchTree:
+	def __init__(self, root_val):
 	  self.root = TreeNode(root_val)
 	  
-	  def insert(self, val):
+	def insert(self, val):
 	  self._insert(self.root, val)
 	  
-	  def _insert(self, root, val):
+	def _insert(self, root, val):
 	  if val > root.val:
-	  if root.right is None:
+if root.right is None:
 	  root.right = TreeNode(val)
 	  else:
 	  self._insert(root.right, val)
