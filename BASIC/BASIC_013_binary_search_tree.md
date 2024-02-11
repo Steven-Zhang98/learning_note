@@ -1,7 +1,6 @@
 ---
 mindmap-plugin: basic
 ---
-
 # Binary Search Tree
 
 ## Reasoning
@@ -36,13 +35,13 @@ class TreeNode:
 		- Repeat
 ```python
 def insert_into_bst(root, value):
-    if root is None:
+    if root is None
         return TreeNode(value)
     if value < root.value:
         root.left = insert_into_bst(root.left, value)
     else:
         root.right = insert_into_bst(root.right, value)
-    return root
+    return root 
 ```
 
 - Problem: Searching for a Value in the BST
