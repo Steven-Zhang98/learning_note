@@ -26,12 +26,11 @@ TEACHER: "And traverse data. OK, please tell me the condition or the **known**?"
 YOUTH: "We know each node has value and has two children at most, and the left sub-tree is less than the node, and the right sub-tree is greater than the node."
 
 TEACHER: "Great. Can you use a picture to show what a binary search tree is?"
-
+213
 YOUTH: "If we have a list of numbers like 1,3, 4,6,7,8,10,13,14. The binary search tree may be like this: ![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202402180905877.png)
 "
 YOUTH: "I find some interesting things when I draw the picture. Firstly, the root is very important, we have to choose the middle number of the number list. Second, the left and right subtrees are also a binary search tree. All subtree can be used both as subtrees and as root for the next subtree."
 
+YOUTH: "Based on the basics of this BST, we may be able to find the value we want quickly because the number of searches we need to 
+perform each time is cut in half."
 
-
-
-YOUTH: "Based on the basics of this BST, we may be able to find the value we want quickly because the number of searches we need to perform each time is cut in half."
