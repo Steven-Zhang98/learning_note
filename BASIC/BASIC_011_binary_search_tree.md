@@ -8,13 +8,15 @@ TEACHER: "Firstly, do you know what a binary search tree (BST) is?"
 
 YOUTH: "Maybe a little bit. It's a data structure, right? I have Googled it, and it says every binary tree has a node, and each node has two children at most. "
 
-TEACHER: "You're partially right, and there's one very important rule you left out"
+TEACHER: "You're partially right, and there's one fundamental rule you left out."
 
 YOUTH: "A rule?"
 
 TEACHER:  "Let's go back to the basic rules of the binary search tree: the left subtree of each node contains only values less than that node, and the right subtree contains only values greater than that node. What does this make you think of?"
 
 YOUTH: "This data structure not only stores the data, it also seems to sort the data, which is a little interesting. Maybe this data structure "
+
+## The reasoning process of BST implement
 
 TEACHER: "Yes, exactly. What if we want to implement a simple BST in Python? What would we need first? Firstly, tell me what the unknown is. Answer me in your words."
 
