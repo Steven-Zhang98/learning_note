@@ -23,11 +23,11 @@ Perform each time is cut in half."
 
 ## The reasoning process of BST implement
 
-TEACHER: "Yes, exactly. What if we want to implement a simple BST in Python? What would we need first? Firstly, tell me what the unknown is. Answer me in your words."
+TEACHER: "Yes, exactly. What if we want to implement a simple BST in Python? What would we need first? Firstly, tell me what the ==unknown== is. Answer me in your words."
 
-YOUTH: "You mean we want to write a BST in Python? And the BST is a data structure, so the data structure allows for searching, deleting, and adding data."
+YOUTH: "You mean we want to write a BST in Python? And the BST is a data structure, so the unknown is to write a BST data structure that allows for searching, deleting, and adding data."
 
-TEACHER: "And traverse data. OK, please tell me the condition or the **known**?"
+TEACHER: "And traverse data. OK, please tell me the condition or the ==known==?"
 
 YOUTH: "We know each node has value and has two children at most, and the left sub-tree is less than the node, and the right sub-tree is greater than the node."
 
