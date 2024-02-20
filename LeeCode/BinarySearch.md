@@ -3,7 +3,9 @@ tags:
   - CS
 ---
 
-```python
+
+## Reasoning
+```python []
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         left = 0
@@ -36,8 +38,8 @@ class Solution:
 
         return binary_search(0,len(nums))
 
-
 ```
+
 
 ## Guess Number Higher or Lower
 
