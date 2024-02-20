@@ -16,6 +16,9 @@ TEACHER:  "Let's go back to the basic rules of the binary search tree: the left 
 
 YOUTH: "This data structure not only stores the data, it also seems to sort the data, which is a little interesting. Maybe this data structure."
 
+### Analogy
+
+
 ## The benefit of binary search tree
 
 YOUTH: "Based on the basics of this BST, we may be able to find the value we want quickly because the number of searches we need to 
