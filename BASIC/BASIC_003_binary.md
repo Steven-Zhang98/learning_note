@@ -3,6 +3,10 @@ sr-due: 2023-11-11
 sr-interval: 2
 sr-ease: 250
 ---
+为什么叫int? float? double? string?
+?
+1
+
 # Version 3.0
 ### 推出规律的过程
 
