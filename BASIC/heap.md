@@ -1,0 +1,6 @@
+# heap
+
+## memory leak
+
+## pointer
+
