@@ -17,7 +17,7 @@ print("Fib result:", result)
 Recursion is an exciting concept in coding. Because recursive consists of two parts. One is the base case, which doesn't need to recursion. The other is the recursive case, which shows the relationship between the f (n) and f (n-1) and f (n-2). f (0) and f (1) are the start of the Fibonacci sequence but are also the start of returning the result.
 
 Take fib (4) as an example, showing how recursion works. There are two steps. 
-
+Cognitive offloading
 ### (1) Call the function. 
 When we try to calculate fib (4), we have to compute fib (3) and fib (2).
 
