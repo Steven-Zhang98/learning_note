@@ -1,4 +1,13 @@
-Hash is map a big 很大范围的数字映射到更小的范围. 从而加快搜索.How to understanding?
+---
+tags:
+  - CS
+sr-due: 2024-03-07
+sr-interval: 1
+sr-ease: 230
+---
+## What is hash
+
+Hash is map a big 很大范围的数字映射到更小的范围. 从而加快搜索.How to understand?
 ?
 假设我们需要用哈希表储存10个左右范围是`[0,100]`的数字, 我们怎么设计一个简单的哈希算法呢?
 
