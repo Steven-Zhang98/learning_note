@@ -10,7 +10,7 @@ sr-ease: 190
 ---
 # Note on The Zen of Python (Xiyun's edition)
 
-## Premature optimisation is the root of all evil
+## Create a model and then optimise
 
 ```python
 def is_even(number):
