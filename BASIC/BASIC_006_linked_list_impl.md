@@ -1,3 +1,7 @@
+---
+tags:
+  - CS
+---
 ```python
 class Node:
     def __init__(self, val):
