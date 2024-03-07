@@ -1,3 +1,7 @@
+---
+tags:
+  - CS
+---
 	After the boy returned home and thought about what he had previously learned about linked lists from his teacher, he realised that linked lists are very powerful data structures. Still, he discovered the shortcomings of chained tables as a data structure. So, for the third week, he returned to the study where his teacher was and began his third week of study.
 
 ## Binary tree
