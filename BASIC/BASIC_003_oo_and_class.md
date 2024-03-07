@@ -1,3 +1,7 @@
+---
+tags:
+  - CS
+---
 ## I want to create a dog
 
 So, I use the simplest method to create two dogs.
