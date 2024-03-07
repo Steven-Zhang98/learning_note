@@ -1,7 +1,15 @@
 ---
 tags:
   - CS
+sr-due: 2024-03-07
+sr-interval: 1
+sr-ease: 230
 ---
+## What is an array list?
+
+Array list is also called list (python) or Vector (C++). It's a data structure which can auto-expansion by itself. And cost continuous memory.
+
+Array list can 
 ```python
 class ArrayList:
     def __init__(self):
