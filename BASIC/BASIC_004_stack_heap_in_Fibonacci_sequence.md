@@ -1,3 +1,7 @@
+---
+tags:
+  - CS
+---
 Consider a simple function that calculates the factorial of a number
 
 ```python
