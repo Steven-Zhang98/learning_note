@@ -1,3 +1,9 @@
+---
+tags:
+  - CS
+---
+
+
 Get CQF certificate
 
 ## 现在至 1 月底：完成 BASIC 部分的文章撰写并写完 Class 大项目
