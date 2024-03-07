@@ -1,8 +1,15 @@
 ---
 tags:
   - CS
+sr-due: 2024-03-07
+sr-interval: 1
+sr-ease: 230
 ---
-# List and tuple
+## Sequence
+
+What is a sequence?
+?
+134
 
 ## List
 
