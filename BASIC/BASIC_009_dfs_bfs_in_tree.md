@@ -27,8 +27,12 @@ What is the repeating step of the traversal tree in BFS?
 
 What is recursion?
 
+How to write recursion code?
+
 ### Iteration
 
-What is literation?
+What is iteration?
+
+How to write iteration code?
 
 
