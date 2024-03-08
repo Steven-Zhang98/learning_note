@@ -19,5 +19,5 @@ What is the meaning of a visit?
 What is the meaning of exploration?
 
 
-What is the repeating step of the traversal graph in BFS?
+What is the repeating step of the traversal tree in BFS?
 
