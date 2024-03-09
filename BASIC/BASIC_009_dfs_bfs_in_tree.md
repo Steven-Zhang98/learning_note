@@ -29,6 +29,9 @@ What is recursion?
 
 How to write recursion code?
 
+What is the relationship between recursion and math?
+
+What is the relationship between memory and breaking problems into smaller problems?
 ### Iteration
 
 What is iteration?
