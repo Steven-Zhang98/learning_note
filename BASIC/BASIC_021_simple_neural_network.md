@@ -5,7 +5,9 @@ sr-due: 2024-03-07
 sr-interval: 1
 sr-ease: 210
 ---
-## How can we do the simplest gradient descent?
+How can we do the simplest gradient descent?
+?
+
 
 If we have a function like this :
 
