@@ -23,6 +23,8 @@ What is the repeating step of the traversal tree in BFS?
 
 ## Implementation
 
+Parent note, child note, grandchildren note
+
 ```python
 from collections import deque
 
