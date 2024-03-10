@@ -30,51 +30,51 @@ class TreeNode:
     """Binary tree node class"""
     def __init__(self, val: int):
         self.val: int = val                # value
-        self.left: TreeNode | None = None  # left reference
-        self.right: TreeNode | None = None # right reference
+        self.left: TreeNode | None = None  # left pointer
+        self.right: TreeNode | None = None # right pointer
 
 def list_to_tree_dfs(arr: list[int], i: int) -> TreeNode | None:
     """ lists to binary trees: recursion """
-    # prevent index 
+    # prevent index error
     if i < 0 or i >= len(arr) or arr[i] is None:
         return None
-    # 构建当前节点
+    # build the current node
     root = TreeNode(arr[i])
-    # 递归构建左右子树
+    # build the left and right tree
     root.left = list_to_tree_dfs(arr, 2 * i + 1)
     root.right = list_to_tree_dfs(arr, 2 * i + 2)
     return root
 
 def list_to_tree(arr: list[int]) -> TreeNode | None:
-    """将列表反序列化为二叉树"""
+    """ list into binary tree """
     return list_to_tree_dfs(arr, 0)
 
 
 def level_order(root: TreeNode | None) -> list[int]:
-    """层序遍历"""
-    # 初始化队列，加入根节点
+    """ level order traversal """
+    # initialise the queue, add root node
     queue: deque[TreeNode] = deque()
     queue.append(root)
-    # 初始化一个列表，用于保存遍历序列
+    # initialise a list to hold the traversal sequence
     res = []
     while queue:
-        node: TreeNode = queue.popleft()  # 队列出队
-        res.append(node.val)  # 保存节点值
+        node: TreeNode = queue.popleft()  # dequeue 
+        res.append(node.val)  # save node value
         if node.left is not None:
-            queue.append(node.left)  # 左子节点入队
+            queue.append(node.left)  # left child enqueues
         if node.right is not None:
-            queue.append(node.right)  # 右子节点入队
+            queue.append(node.right)  # right child enqueue
     return res
 
 """Driver Code"""
 if __name__ == "__main__":
-    # 初始化二叉树
-    # 这里借助了一个从数组直接生成二叉树的函数
+    # Initialising a binary tree
+    # generates a binary tree from an array
     root = list_to_tree(arr=[1, 2, 3, 4, 5, 6, 7])
 
-    # 层序遍历
+    # level order traversal
     res = level_order(root)
-    print("\n层序遍历的节点打印序列 = ", res)
+    print("\n print sequence of nodes in level order traversal = ", res)
 ```
 
 ### Recursion
