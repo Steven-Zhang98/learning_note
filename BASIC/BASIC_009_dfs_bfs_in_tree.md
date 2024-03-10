@@ -32,7 +32,9 @@ class TreeNode:
         self.val: int = val                # value
         self.left: TreeNode | None = None  # left pointer
         self.right: TreeNode | None = None # right pointer
+```
 
+```python
 def list_to_tree_dfs(arr: list[int], i: int) -> TreeNode | None:
     """ lists to binary trees: recursion """
     # prevent index error
@@ -48,8 +50,9 @@ def list_to_tree_dfs(arr: list[int], i: int) -> TreeNode | None:
 def list_to_tree(arr: list[int]) -> TreeNode | None:
     """ list into binary tree """
     return list_to_tree_dfs(arr, 0)
+```
 
-
+```python
 def level_order(root: TreeNode | None) -> list[int]:
     """ level order traversal """
     # initialise the queue, add root node
@@ -76,7 +79,6 @@ if __name__ == "__main__":
     res = level_order(root)
     print("\n print sequence of nodes in level order traversal = ", res)
 ```
-
 ### Recursion
 
 What is recursion?
