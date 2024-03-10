@@ -2,6 +2,8 @@
 
 ## To-do list
 
+毕业设计
+
 Python static method, class method
 
 数据结构, queue, stack, priority queue, deque, etc. 了解内部构造, 内存使用优缺点, 和大致算法, 写文章介绍, 不需要手写代码 (1,2 天)
@@ -26,7 +28,7 @@ Multithreading and GIL (大概了解一下)
 
 HashMap (哈希表, 散列表)
 1. HashMap 是什么? (Key Value pair, hash 是什么意思)
-2. O (1) search/insert complexity comparing with binary tree O (logn)
+2. O (1) search/insert complexity comparing with binary tree O (login)
 3. Hashing algorithm
 4. 哈希冲突 (collision)
 5. 哈希冲突的两种解决方法
