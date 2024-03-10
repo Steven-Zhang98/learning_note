@@ -27,15 +27,15 @@ What is the repeating step of the traversal tree in BFS?
 from collections import deque
 
 class TreeNode:
-    """二叉树节点类"""
+    """Binary tree node class"""
     def __init__(self, val: int):
-        self.val: int = val                # 节点值
-        self.left: TreeNode | None = None  # 左子节点引用
-        self.right: TreeNode | None = None # 右子节点引用
+        self.val: int = val                # value
+        self.left: TreeNode | None = None  # left reference
+        self.right: TreeNode | None = None # right reference
 
 def list_to_tree_dfs(arr: list[int], i: int) -> TreeNode | None:
-    """将列表反序列化为二叉树：递归"""
-    # 如果索引超出数组长度，或者对应的元素为 None ，则返回 None
+    """ lists to binary trees: recursion """
+    # prevent index 
     if i < 0 or i >= len(arr) or arr[i] is None:
         return None
     # 构建当前节点
