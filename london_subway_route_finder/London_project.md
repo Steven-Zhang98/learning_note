@@ -7,32 +7,48 @@ How can we save the data?
 ?
 We first read out the data so that we can find the name of the subway from the subway ID, find the subway ID from the subway name, and find its related subway station from the subway ID; the purpose of doing so is to allow the user to enter the start station and end station of the subway station, we can be based on the name of this subway station to find the ID of the subway station, and then the shortest path between the two IDs to find out. Then, we can find the shortest path between these two IDs and print out the shortest path based on the ID and the name of the subway station.
 
-
+## 
 ```python
 class StationInfo:
-	def __init_(self):
-	  m_name_to_id_dict = {}
-	  m_id_to_name_dict = {}
-	  m_id_neighbours = {}  # id -> [neighbour_id1, neighbour_id2, neighbour_id3...]
+    def __init__(self, filename):
+        # Initialize dictionaries to store station info
+        self.m_name_to_id_dict = {}
+        self.m_id_to_name_dict = {}
+        self.m_id_neighbours = {}
 
-  @classmethod
-  def LoadData(name, id):
-    # populate m_name_to_id_dict
-    # populate m_id_to_name_dict
-    pass
+        # Load data from file
+        self.load_data(filename)
 
-  @classmethod
-  def GetNameFromID(id):
-    pass
+    def load_data(self, filename):
+        # Read the file and populate the dictionaries
+        with open(filename, 'r') as file:
+            for line in file:
+                # Split each line into parts
+                parts = line.strip().split('|')
+                # Check if the line has the correct number of parts
+                if len(parts) >= 3:
+                    station_id, station_name, neighbours = parts[0], parts[1], parts[3]
+                    # Populate name to ID and ID to name dictionaries
+                    self.m_name_to_id_dict[station_name] = station_id
+                    self.m_id_to_name_dict[station_id] = station_name
+                    # Split the neighbours string into a list and store it
+                    self.m_id_neighbours[station_id] = neighbours.split(',')
 
-  @classmethod
-  def GetIDFromName(name):
-    pass
+    def get_name_from_id(self, station_id):
+        # Return the station name corresponding to the given ID
+        return self.m_id_to_name_dict.get(station_id, "Station ID not found")
 
-  @classmethod
-  def GetNeighboursFromID(id):
-    pass
+    def get_id_from_name(self, station_name):
+        # Return the station ID corresponding to the given name
+        return self.m_name_to_id_dict.get(station_name, "Station name not found")
 
+    def get_neighbours_from_id(self, station_id):
+        # Return the list of neighbour IDs for the given station ID
+        return self.m_id_neighbours.get(station_id, [])
+
+```
+
+```python
 class StationNode:
   def __init__(self, node):
     self.m_root = node
@@ -55,32 +71,7 @@ class StationFinder:
   def GetPaths(self, from_station, to_station):
     tree = StationTree(from_station)
     tree.GetPathsTo(to_station)
-    
-
-## Load file
-# for loop file
-# load data into StationInfo
-
-## collect user from_station and to_station
-while(True):
-  # get from_station
-  # get to_station
-  finder = StationFinder()
-  possible_paths = finder.GetPaths(from_station, to_station)
-  for path in possible_paths:
-    print("One possible path:")
-    for i in path:
-      print(StationInfo.GetNameFromID(i), ",")
 ```
-
-  # TODO: check and compare static method and class method
-
-
-
-
-
-
-
 ## BFS
 
 How can we represent the graph of the underground?
@@ -154,3 +145,79 @@ How to understand the structure of the project?
 
 
 Use a chatbot to teach me how to build the big picture of the project.
+
+
+## Resource
+```python
+class StationInfo:
+	def __init_(self):
+	  m_name_to_id_dict = {}
+	  m_id_to_name_dict = {}
+	  m_id_neighbours = {}  # id -> [neighbour_id1, neighbour_id2, neighbour_id3...]
+
+  @classmethod
+  def LoadData(name, id):
+    # populate m_name_to_id_dict
+    # populate m_id_to_name_dict
+    pass
+
+  @classmethod
+  def GetNameFromID(id):
+    pass
+
+  @classmethod
+  def GetIDFromName(name):
+    pass
+
+  @classmethod
+  def GetNeighboursFromID(id):
+    pass
+
+class StationNode:
+  def __init__(self, node):
+    self.m_root = node
+
+  def InsertNeighbours(neighbour_ids):
+    pass
+
+  def GetNeighbours():
+    pass
+
+class StationTree:
+  def __init__(self, from_station):
+    self.m_from_station = StationNode(from_station)
+
+  def GetPathsTo(self, to_station):
+    # level order traverse
+    pass
+
+class StationFinder:
+  def GetPaths(self, from_station, to_station):
+    tree = StationTree(from_station)
+    tree.GetPathsTo(to_station)
+    
+
+## Load file
+# for loop file
+# load data into StationInfo
+
+## collect user from_station and to_station
+while(True):
+  # get from_station
+  # get to_station
+  finder = StationFinder()
+  possible_paths = finder.GetPaths(from_station, to_station)
+  for path in possible_paths:
+    print("One possible path:")
+    for i in path:
+      print(StationInfo.GetNameFromID(i), ",")
+```
+
+  # TODO: check and compare static method and class method
+
+
+
+
+
+
+
