@@ -6,7 +6,7 @@ class station_info:
 
 What is the project like?
 ?
-Input and output
+When the user inputs the start and end points of the subway station
 
 How to understand the structure of the project?
 
