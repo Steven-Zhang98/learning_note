@@ -7,7 +7,8 @@ tags:
 ## Design
 
 ### Input-output
-#### How can we design a London subway system?
+
+ How can we design a London subway system?
 ?
 Input and output: Firstly, we must know our program's input and output. Users will input their starting station and destination, and our program will give the user the list 
 
