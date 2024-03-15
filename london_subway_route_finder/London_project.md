@@ -2,10 +2,16 @@
 tags:
   - CS
   - Project
-时间:
+时间: 2024-03-15T08:53:00
 ---
-How can we design a London subway system?
+## Design
+
+### Input-output
+#### How can we design a London subway system?
 ?
+Input and output: Firstly, we must know our program's input and output. Users will input their starting station and destination, and our program will give the user the list 
+
+
 
 ## Data model definition (class definition)
 
@@ -14,9 +20,16 @@ Why do we have to get the name to ID and ID to name? And put it in the dictionar
 We first read out the data so that we can find the name of the subway from the subway ID, find the subway ID from the subway name, and find its related subway station from the subway ID; the purpose of doing so is to allow the user to enter the start station and end station of the subway station, we can be based on the name of this subway station to find the ID of the subway station, and then the shortest path between the two IDs to find out. Then, we can find the shortest path between these two IDs and print out the shortest path based on the ID and the name of the subway station.
 
 ```python
-  self.m_name_to_id_dict = {}
-  self.m_id_to_name_dict = {}
-  self.m_id_neighbours = {}
+  class StationInfo:
+    def __init__(self, filename):
+        # Initialize dictionaries to store station info
+	    self.m_name_to_id_dict = {}
+		self.m_id_to_name_dict = {}
+		self.m_id_neighbours = {}
+
+        # Load data from the file
+        self.load_data(filename)
+  
 ```
 
 
@@ -33,23 +46,17 @@ How can we load the file?
                 # Check if the line has the correct number of parts
                 if len(parts) >= 3:
                     station_id, station_name, neighbours = parts[0], parts[1], parts[3]
-                    # Populate name to ID and ID to name dictionaries
-                    self.m_name_to_id_dict[station_name] = station_id
-                    self.m_id_to_name_dict[station_id] = station_name
+			    # Populate name to ID and ID to name dictionaries
+				    self.m_name_to_id_dict[station_name] = station_id
+				    self.m_id_to_name_dict[station_id] = station_name
                     # Split the neighbours string into a list and store it
-                    self.m_id_neighbours[station_id] = neighbours.split(',')
+				    self.m_id_neighbours[station_id] = neighbours.split(',')
 ```
 
+How can we get the data?
+?
+Jjj
 ```python
-class StationInfo:
-    def __init__(self, filename):
-        # Initialize dictionaries to store station info
-      
-
-        # Load data from file
-        self.load_data(filename)
-
-
     def get_name_from_id(self, station_id):
         # Return the station name corresponding to the given ID
         return self.m_id_to_name_dict.get(station_id, "Station ID not found")
@@ -180,7 +187,15 @@ while(True):
 
 
 ## TODO:
-  # TODO: check and compare static method and class method
+TODO: check and compare static method and class method
+
+## Resource:
+
+
+[hello algo](https://www.hello-algo.com/chapter_tree/binary_tree_traversal/)
+
+[python tutorial](https://python-course.eu/python-tutorial/adventure-game-with-structural-pattern-matching.php)
+
 
 
 
