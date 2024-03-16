@@ -4,39 +4,99 @@ tags:
   - Project
 时间: 2024-03-15T08:53:00
 ---
-## Design
-
-### Input-output
-
- How can we design a London subway system?
-?
-Input and output: Firstly, we must know our program's input and output. Users will input their starting station and destination, and our program will give the user the list 
-
-
-
-## Data model definition (class definition)
-
-Why do we have to get the name to ID and ID to name? And put it in the dictionary?
-?
-We first read out the data so that we can find the name of the subway from the subway ID, find the subway ID from the subway name, and find its related subway station from the subway ID; the purpose of doing so is to allow the user to enter the start station and end station of the subway station, we can be based on the name of this subway station to find the ID of the subway station, and then the shortest path between the two IDs to find out. Then, we can find the shortest path between these two IDs and print out the shortest path based on the ID and the name of the subway station.
-
 ```python
-  class StationInfo:
-    def __init__(self, filename):
-        # Initialize dictionaries to store station info
-	    self.m_name_to_id_dict = {}
-		self.m_id_to_name_dict = {}
-		self.m_id_neighbours = {}
+class StationInfo:
+    m_name_to_id_dict = {}
+    m_id_to_name_dict = {}
+    m_id_neighbours = {}
 
-        # Load data from the file
-        self.load_data(filename)
-  
+    @classmethod
+    def LoadData(cls, filename):
+        with open(filename, 'r') as file:
+            for line in file:
+                parts = line.strip().split('|')
+                if len(parts) >= 4:
+                    station_id, station_name, neighbours = parts[0], parts[1], parts[3]
+                    cls.m_name_to_id_dict[station_name] = station_id
+                    cls.m_id_to_name_dict[station_id] = station_name
+                    cls.m_id_neighbours[station_id] = neighbours.split(',')
+
+    @classmethod
+    def GetNameFromID(cls, id):
+        return cls.m_id_to_name_dict.get(id, "Station ID not found")
+
+    @classmethod
+    def GetIDFromName(cls, name):
+        return cls.m_name_to_id_dict.get(name, "Station name not found")
+
+    @classmethod
+    def GetNeighboursFromID(cls, id):
+        return cls.m_id_neighbours.get(id, [])
+class StationNode:
+    def __init__(self, node_id):
+        self.node_id = node_id
+        self.neighbours = []
+
+    def InsertNeighbours(self, neighbour_ids):
+        self.neighbours.extend(neighbour_ids)
+
+    def GetNeighbours(self):
+        return self.neighbours
+class StationTree:
+    def __init__(self, from_station_id):
+        self.root = StationNode(from_station_id)
+
+    def GetPathsTo(self, to_station_id):
+        paths = []
+        queue = [(self.root, [self.root.node_id])]
+        while queue:
+            current_node, path = queue.pop(0)
+            if current_node.node_id == to_station_id:
+                paths.append(path)
+                continue
+            for neighbour_id in StationInfo.GetNeighboursFromID(current_node.node_id):
+                if neighbour_id not in path:
+                    new_node = StationNode(neighbour_id)
+                    queue.append((new_node, path + [neighbour_id]))
+        return paths
+class StationFinder:
+    def __init__(self):
+        self.station_info = StationInfo
+
+    def GetPaths(self, from_station_name, to_station_name):
+        from_station_id = self.station_info.GetIDFromName(from_station_name)
+        to_station_id = self.station_info.GetIDFromName(to_station_name)
+        if from_station_id == "Station name not found" or to_station_id == "Station name not found":
+            return []
+        tree = StationTree(from_station_id)
+        return tree.GetPathsTo(to_station_id)
+if __name__ == "__main__":
+    StationInfo.LoadData('stations.txt')  # 假设 'stations.txt' 是您的数据文件
+
+    while True:
+        from_station = input("Enter the start station: ")
+        to_station = input("Enter the destination station: ")
+        finder = StationFinder()
+        possible_paths = finder.GetPaths(from_station, to_station)
+        for path in possible_paths:
+            print("One possible path:")
+            for station_id in path:
+                print(StationInfo.GetNameFromID(station_id), end=" -> ")
+            print("\n")
+        break  # 根据需要可以去掉这行来允许多次查询
+
 ```
 
-
-How can we load the file?
-?
 ```python
+class StationInfo:
+    def __init__(self, filename):
+        # Initialize dictionaries to store station info
+        self.m_name_to_id_dict = {}
+        self.m_id_to_name_dict = {}
+        self.m_id_neighbours = {}
+
+        # Load data from file
+        self.load_data(filename)
 
     def load_data(self, filename):
         # Read the file and populate the dictionaries
@@ -47,17 +107,12 @@ How can we load the file?
                 # Check if the line has the correct number of parts
                 if len(parts) >= 3:
                     station_id, station_name, neighbours = parts[0], parts[1], parts[3]
-			    # Populate name to ID and ID to name dictionaries
-				    self.m_name_to_id_dict[station_name] = station_id
-				    self.m_id_to_name_dict[station_id] = station_name
+                    # Populate name to ID and ID to name dictionaries
+                    self.m_name_to_id_dict[station_name] = station_id
+                    self.m_id_to_name_dict[station_id] = station_name
                     # Split the neighbours string into a list and store it
-				    self.m_id_neighbours[station_id] = neighbours.split(',')
-```
+                    self.m_id_neighbours[station_id] = neighbours.split(',')
 
-How can we get the data?
-?
-Jjj
-```python
     def get_name_from_id(self, station_id):
         # Return the station name corresponding to the given ID
         return self.m_id_to_name_dict.get(station_id, "Station ID not found")
@@ -72,8 +127,33 @@ Jjj
 
 ```
 
-## Stationfinder
 ```python
+class StationInfo:
+
+  m_name_to_id_dict
+  m_id_to_name_dict
+  m_id_neighbours # id -> [neighbour_id1, neighbour_id2, neighbour_id3...]
+
+  # TODO: check and compare static method and class method
+
+  @classmethod
+  def LoadData(name, id):
+    # populate m_name_to_id_dict
+    # populate m_id_to_name_dict
+    pass
+
+  @classmethod
+  def GetNameFromID(id):
+    pass
+
+  @classmethod
+  def GetIDFromName(name):
+    pass
+
+  @classmethod
+  def GetNeighboursFromID(id):
+    pass
+
 class StationNode:
   def __init__(self, node):
     self.m_root = node
@@ -96,84 +176,12 @@ class StationFinder:
   def GetPaths(self, from_station, to_station):
     tree = StationTree(from_station)
     tree.GetPathsTo(to_station)
-```
-### BFS
-
-How can we represent the graph of the underground?
-?
-```python
-from collections import deque, defaultdict
-
-# 假设我们有一个地铁站图，用adjacency table表示
-# 键是站点ID，值是与该站点直接相连的站点ID列表
-subway_graph = {
-    'A': ['B', 'D'],
-    'B': ['A', 'C', 'E'],
-    'C': ['B', 'F'],
-    'D': ['A', 'E'],
-    'E': ['B', 'D', 'F'],
-    'F': ['C', 'E']
-}
-```
-
-
-```python
-# BFS函数，用于构建搜索树并查找路径
-def bfs_paths(start, goal):
-```
-
-Why do we use deque to save nodes and paths to be accessed?
-```python
-    # 创建队列用于存放待访问节点及路径
-    queue = deque([ (start, [start]) ])
-    # 记录已访问节点，避免重复访问
-    visited = set()
     
-    # 存储从起点到各点的路径
-    paths = []
-    
-    while queue:
-        # 取出当前节点及当前路径
-        current, path = queue.popleft()
-        visited.add(current)
-        
-        # 检查是否达到目标站点
-        if current == goal:
-            paths.append(path)
-            continue  # 如果需要找到所有路径，则不中断搜索
-        
-        # 遍历邻接节点
-        for neighbor in subway_graph[current]:
-            if neighbor not in visited:
-                # 将邻居节点及路径加入队列
-                queue.append((neighbor, path + [neighbor]))
-    
-    return paths
 
-# 使用BFS找到从站点'A'到站点'F'的路径
-start_station = 'A'
-end_station = 'F'
-paths = bfs_paths(start_station, end_station)
+## Load file
+# for loop file
+# load data into StationInfo
 
-# 打印路径
-for path in paths:
-    print(" -> ".join(path))
-
-``` 
-
-
-What is the project like?
-?
-When the user inputs the start and end points of the subway station
-
-How to understand the structure of the project?
-
-
-Use a chatbot to teach me how to build the big picture of the project.
-
-## Collect user's data
-
-```python
 ## collect user from_station and to_station
 while(True):
   # get from_station
@@ -185,22 +193,3 @@ while(True):
     for i in path:
       print(StationInfo.GetNameFromID(i), ",")
 ```
-
-
-## TODO:
-TODO: check and compare static method and class method
-
-## Resource:
-
-
-[hello algo](https://www.hello-algo.com/chapter_tree/binary_tree_traversal/)
-
-[python tutorial](https://python-course.eu/python-tutorial/adventure-game-with-structural-pattern-matching.php)
-
-
-
-
-
-
-
-
