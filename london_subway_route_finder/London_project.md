@@ -7,6 +7,10 @@ tags:
 ```python
 # This is the definition part of the StationInfo class
 class StationInfo:
+	""""
+	 StationInfo provides a central repository for station information.     
+	 This class is designed to get the station name, station id, and station neighbors.
+	""""
     m_name_to_id_dict = {}
     m_id_to_name_dict = {}
     m_id_neighbours = {}
