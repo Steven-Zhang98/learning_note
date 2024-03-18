@@ -9,7 +9,7 @@ tags:
 class StationInfo:
 	""""
 	 StationInfo provides a central repository for station information.     
-	 This class is designed to get the station name, station id, and station neighbors.
+	 This class is designed to get the station name, ID, and neighbours.
 	""""
     m_name_to_id_dict = {}
     m_id_to_name_dict = {}
