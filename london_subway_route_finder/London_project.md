@@ -5,11 +5,13 @@ tags:
 时间: 2024-03-15T08:53:00
 ---
 ```python
-# This is the definition part of the StationInfo class
+
 class StationInfo:
 	""""
-	 StationInfo provides a central repository for station information.     
-	 This class is designed to get the station name, ID, and neighbours.
+	 Purpose: Manage information about the stations, such as name, ID, and neighbouring stations.
+	 Attributes: Use three dictionaries to store station name to id, id to name, and neighbours.
+	 Behaviours: Get information form txt file and 
+	 
 	""""
     m_name_to_id_dict = {}
     m_id_to_name_dict = {}
