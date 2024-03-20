@@ -8,9 +8,15 @@ tags:
 
 class StationInfo:
 	""""
-	 Purpose: Manage information about the stations, such as name, ID, and neighbouring stations.
-	 Attributes: Use three dictionaries to store station name to id, id to name, and neighbours.
-	 Behaviours: Get information form txt file and 
+	 Purpose: Manage information about the stations in the London underground, including loading data into the dictionary, mapping between the ID and their name, and tracking which station is their neighbourhood.
+	 Attributes: 
+	 m_name_to_id_dict(dict): Maps station name to unique identifiers. Convert user input station name to station ID to find the shortest path.
+	 m_id_to_name_dict(dict): Maps station identifiers back to name. When we found the shortest path
+	 m_id_neighbours(dict): Maps station identifiers to a list of identifiers for its neighbouring stations. 
+	 Behaviours: 
+	 LoadData(filename): Read data from 
+	 Get information from a text file and save it in the dictionary.
+	 Get information from the three dictionaries.
 	 
 	""""
     m_name_to_id_dict = {}
