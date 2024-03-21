@@ -14,10 +14,9 @@ class StationInfo:
 	 m_id_to_name_dict(dict): Maps station identifiers back to name. When we found the shortest path
 	 m_id_neighbours(dict): Maps station identifiers to a list of identifiers for its neighbouring stations. 
 	 Behaviours: 
-	 LoadData(filename): Read data from 
-	 Get information from a text file and save it in the dictionary.
-	 Get information from the three dictionaries.
-	 
+	 LoadData(filename): Read data from a file, parsing each line into ID, name, and neighbours and storing it into class attributes.  
+	 Get method: Provide some interfaces to allow other parts of the program to interact with this object.
+	 		
 	""""
     m_name_to_id_dict = {}
     m_id_to_name_dict = {}
@@ -47,6 +46,11 @@ class StationInfo:
         return cls.m_id_neighbours.get(id, [])                
 
 class StationNode:
+	"""
+	Purpose: Provide a basic node to construct a tree. 
+	Attributes: Each node has an ID and its neighbours.
+	Behaviours: Provide an interface to allow other parts of the program to insert and get neighbours. 
+	"""
     def __init__(self, node_id):
         self.node_id = node_id
         self.neighbours = []
@@ -58,6 +62,11 @@ class StationNode:
         return self.neighbours
     
 class StationTree:
+	"""
+	Purpose: Construct a tree based on the root.
+	Attributes: Each tree has its root.
+	Behaviours: Provide an interface to allow other parts of the program to get all the paths between the root and the target node.
+	"""
     def __init__(self, from_station_id):
         self.root = StationNode(from_station_id)
 
@@ -81,6 +90,9 @@ class StationTree:
         return paths
 
 class StationFinder:
+	"""
+	Purpose: Find the path between 
+	"""
     def __init__(self):
         self.station_info = StationInfo
 
