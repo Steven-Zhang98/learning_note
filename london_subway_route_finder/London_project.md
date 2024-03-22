@@ -23,6 +23,7 @@ class StationInfo:
     m_id_neighbours = {}
 
     @classmethod
+    #  LoadData(filename): Read data from a file, parsing each line into ID, name, and neighbours and storing it into class attributes.  
     def LoadData(cls, filename):
         with open(filename, 'r') as file:
             for line in file:
@@ -47,7 +48,7 @@ class StationInfo:
 
 class StationNode:
 	"""
-	Purpose: Provide a basic node to construct a tree. 
+	Purpose: Provide a basic node to construct a tree or graph. 
 	Attributes: Each node has an ID and its neighbours.
 	Behaviours: Provide an interface to allow other parts of the program to insert and get neighbours. 
 	"""
@@ -63,7 +64,7 @@ class StationNode:
     
 class StationTree:
 	"""
-	Purpose: Construct a tree based on the root.
+	Purpose: Construct a tree based on the root node.
 	Attributes: Each tree has its root.
 	Behaviours: Provide an interface to allow other parts of the program to get all the paths between the root and the target node.
 	"""
@@ -91,7 +92,8 @@ class StationTree:
 
 class StationFinder:
 	"""
-	Purpose: Find the path between 
+	Purpose: Find the path between two stations.
+	
 	"""
     def __init__(self):
         self.station_info = StationInfo
