@@ -47,7 +47,7 @@ ValueError: too many values to unpack (expected 3)
 ## 2
 ```python
 class StationNode:
-	def __init__(self, node_id):
+	def __init__(self, node_id: str):
 		self.node_id = node_id
 		self.node_neighbor = StationInfo.get_id_from_neighbor(node_id)
 
