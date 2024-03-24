@@ -13,10 +13,6 @@ class StationInfo:
 	 m_name_to_id_dict(dict): Maps station name to unique identifiers. Convert user input station name to station ID to find the shortest path.
 	 m_id_to_name_dict(dict): Maps station identifiers back to name. When we found the shortest path
 	 m_id_neighbours(dict): Maps station identifiers to a list of identifiers for its neighbouring stations. 
-	 Behaviours: 
-	 LoadData(filename): Read data from a file, parsing each line into ID, name, and neighbours and storing it into class attributes.  
-	 Get method: Provide some interfaces to allow other parts of the program to interact with this object.
-	 		
 	""""
     m_name_to_id_dict = {}
     m_id_to_name_dict = {}
