@@ -14,13 +14,5 @@ The way we use stack is like loading ammunition into the magazine. When we push 
 ![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202403261730362.png)
 
 
-## push
 
-## scope
-
-### out of scope
-
-## stack overflow
-
-## usage
 
