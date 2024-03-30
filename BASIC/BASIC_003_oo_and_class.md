@@ -2,9 +2,16 @@
 tags:
   - CS
 ---
-## I want to create a dog
+## Introduction to Object-Oriented Programming (OOP)
 
-So, I use the simplest method to create two dogs.
+OOP is a tool by which we model the world. People in different jobs have different tools with which to model the world. Economists model the word with the supply and demand relationship. Mathematicians model the word with a probabilistic model. The programmer models the world with class and instance. 
+
+## The differences between class, object, instance 
+
+Class the base of all objects. Class is like the blueprint of all objects.  It defines a set of attributes (what is the object) and methods (what is the action of all objects). 
+
+Suppose we have a game about dogs.  And the dog can move from one position to another position. 
+
 ```python
 dog_name = "dog1"
 dog_position = [1, 1]
@@ -19,24 +26,9 @@ new_position = [1,4]
 print(dog_name, "moved from", dog_position, "to position", new_position) 
 ```
 
-This code creates two dogs on the game map. I set their names and positions at the beginning and can later move them to different positions.
+It's easy to create 2 dogs; we just give the name of two dogs and use the print function to simulate the dog born at one place and move to another place. 
 
-## Understanding Variable Scope
-It's hard to track the positions and movements of dogs because dog 1 and dog 2 use the same variable, dog_name and dog_position; when we create dog 2, the dog_name and dog_position will change from dog 1's name and position to dog'2's name and position. This is called variable reuse. But if we reuse the variable, The position updates and the movements of the dogs can not be interactive.
-
-## Use list to Manage Dogs
-To make this code more dynamic and capable of handling multiple dogs without overwriting, one approach could be to use a list or a dictionary to store each dog's details.
-
-```python
-dog1 = {"name": "dog1", "position": [1, 2]}
-print(dog1["name"])
-dog2 = {"name": "dog2", "position": [1, 4]}
-dog = [dog1,dog2]
-print(dog[0]["name"],"bron at" ,dog[0]["position"])
-dog[0]["position"] = [3,4]
-print(dog[0]["name"],"bron at" ,dog[0]["position"],"move to",dog[0]["position"])
-
-```
+But what if we want to create 100 dogs? It is difficult to name 100 dogs one by one. 
 
 ## Use Class to Manage Dogs
 I find it hard to add a new dog to the dog list; I have to input the name and position in a dictionary and add the dictionary to the dog list. And I also find it hard to input some new information into the dictionary; for example, I want to add the (a dog's) height.
@@ -172,4 +164,16 @@ I created the super-dog class, which is inherited from the dog class. The super 
 
 I created an encounter method to show how the instances these classes reacted to each other.
 
+## Abstraction
 
+```python
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+	def __init__(self, position):
+		m_position = []
+		
+	@abstractmethod
+	def move():
+		pass
+```
