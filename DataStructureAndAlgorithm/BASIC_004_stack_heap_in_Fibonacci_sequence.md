@@ -16,8 +16,7 @@ print(factorial(5))
 
 ## Memory stack
 
-![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202401052229770.png)
-Stack is a last-in-first-out (LIFO) memory structure used for storing functions and variables. In this code, if we want to compute the factorial of the (5) number, we have to store 5 stack frames in the memory (factorial (5), factorial (4), factorial (3), factorial (2), and factorial (1)), factorial (1) is the last function push in the stack but it's the first function pop out of the stack, because factorial (1) is the base case.  
+memory structure used for storing functions and variables. In this code, if we want to compute the factorial of the (5) number, we have to store 5 stack frames in the memory (factorial (5), factorial (4), factorial (3), factorial (2), and factorial (1)), factorial (1) is the last function push in the stack but it's the first function pop out of the stack, because factorial (1) is the base case.  
 
 ## Stack overload
 
@@ -60,9 +59,3 @@ Stack overflow and memory leak: Deep recursive call will cause stack overflow. B
 leaky_list = []
 while True:
     leaky_list.append('a' * 1024)  # 持续添加占用内存的对象
-
-```
-
-
-![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202401061628343.png)
-
