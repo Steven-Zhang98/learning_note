@@ -64,11 +64,6 @@ LinkedList is like a train. Each node is a carriage. The carriage has its passen
 
 It is important to know that everything in Python is an object, 
 
-YOUTH: The linked list is a very powerful data structure. It can use scattered memory and doesn't need to occupy contiguous memory blocks.   
-
-TEACHER: Can you use the picture to explain it?
-
-YOUTH: Of course.
 
 ![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202402172219355.png)
 
