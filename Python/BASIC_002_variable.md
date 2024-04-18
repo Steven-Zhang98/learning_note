@@ -5,6 +5,19 @@ sr-ease: 250
 ---
 Why do we call int? Float? Double? String?
 
+ Swap Two integers in Array
+
+```python
+class Solution:
+
+	def swap_integgers(self, A, index1, index2):
+		# wirte your code here
+		inter = 0
+		inter = A[index1]
+		A[index1] = A[index2]
+		A[index2] = inter
+		 
+```
 ## Binary
 
 
