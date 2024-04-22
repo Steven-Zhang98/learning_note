@@ -2,22 +2,18 @@ Pass by Value: In this type of pass, what is passed to the function is a copy of
 Pass by Reference: In this method, a reference to the variable, i.e., a memory address, is passed. Therefore, any changes made within the function are directly reflected in the original data.
 
 ```python
-def modify_list(lst):
-    lst.append(100)  # This modifies the original list because lists are mutable
+list_1 = [1,2,3,4]
+list_2 = list_1 
+list_2[0] = 100
+print(id(list_1), id(list_2))
 
-def modify_number(num):
-    num += 100  # This does not affect the original variable because integers are immutable
-
-# List example
-original_list = [1, 2, 3]
-print("Before modify_list:", original_list)
-modify_list(original_list)
-print("After modify_list:", original_list)
-
-# Integer example
-original_number = 5
-print("Before modify_number:", original_number)
-modify_number(original_number)
-print("After modify_number:", original_number)
+num_1 = 10
+num_2 = num
+num_2 = 20
+print(id(num_1), id(num_2))
 
 ```
+
+- pass by reference
+![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202404221029372.png)
+
