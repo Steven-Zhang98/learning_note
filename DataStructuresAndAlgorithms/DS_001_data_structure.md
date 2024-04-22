@@ -33,3 +33,9 @@ The physical structure shows how the data is stored in computer memory. It is he
 ## Linear Data Structures  VS Non-linear Data Structures
 
 ## Incubation area
+
+How to learn data structure?
+?
+- data type
+- structure
+- CRUD
