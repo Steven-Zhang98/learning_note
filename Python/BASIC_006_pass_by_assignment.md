@@ -87,6 +87,6 @@ if __name__ == "__main__":
 
 What is pass-by-value and pass-by-reference?
 ?
-- The variable stores the reference
+- The variable stores the reference  pass parameters to function
 - pass by value: When we create a new object, it does not affect the original one
 - pass by reference: When we don't create a new object, it does affect the original one
