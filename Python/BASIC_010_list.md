@@ -75,4 +75,5 @@ del list_2[1:5]
 
 What is the list in Python?
 ?
-The list is an ordered data structure that can store any object; the list can create, update, read, and delete elements. 
+The list is an ordered data structure that can store any object; the list can create, update, read, and delete elements.
+<!--SR:!2024-04-26,4,270--> 
