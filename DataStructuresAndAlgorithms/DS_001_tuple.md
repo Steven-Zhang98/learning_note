@@ -1,4 +1,19 @@
+---
+in: 
+up: 
+down: 
+related: 
+opposite: 
+Create: 
+by: 
+due-date: 
+rank: 
+tags:
+  - Incubation🌱
+---
 - Tuple is immutable
+	- using tuple as a hash key
+	- return multiple values
 - Tuple can store any data.
 
 
@@ -35,4 +50,8 @@ print("Difference:", difference_result)
 
 ```
 
+## Incubation area
 
+What is a tuple, and why do we need a tuple?
+?
+The tuple is immutable; we can use tuple as a hash key and return multiple values
