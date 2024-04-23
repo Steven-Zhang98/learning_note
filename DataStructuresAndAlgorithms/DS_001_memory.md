@@ -1,19 +1,17 @@
 ---
+Create: 
 in: 
 up: 
 down: 
 related: 
 opposite: 
-Create: 
-by: 
-rank: 
-tags:
-  - "#flashcards"
+by:
 ---
-
 What is memory
 ?
-1342
+- 1
+- 2
+- 3
 
 Random access memory (RAM) is like a big grid.
 Every grid stores 1 byte of data. (11110000)
