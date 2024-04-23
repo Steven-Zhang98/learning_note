@@ -1,14 +1,11 @@
 ---
+Create: 
 in: 
 up: 
 down: 
 related: 
 opposite: 
-Create: 
-by: 
-rank: 
-tags:
-  - Incubation🌱
+by:
 ---
 How to delete the nth node from the end of the linked list
 ?
