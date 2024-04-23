@@ -10,7 +10,6 @@ by:
 ---
 How to learn data structure
 ?
-1234
 - data type
 - structure
 - CRUD
