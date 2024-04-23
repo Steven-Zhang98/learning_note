@@ -16,9 +16,6 @@ What is the stack?
 143
 
 
-How to delete the nth node from the end of the linked list?
-?
-fast and slow pointer
 
 ## What is stack
 
