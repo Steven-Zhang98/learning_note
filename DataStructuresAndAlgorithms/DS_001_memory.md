@@ -6,11 +6,15 @@ related:
 opposite: 
 Create: 
 by: 
-due-date: 
 rank: 
 tags:
-  - Incubation🌱
+  - "#flashcards"
 ---
+
+What is memory
+?
+1342
+
 Random access memory (RAM) is like a big grid.
 Every grid stores 1 byte of data. (11110000)
 64-bit systems have 2 to the power of 64 addresses.
