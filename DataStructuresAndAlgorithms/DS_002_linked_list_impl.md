@@ -4,9 +4,8 @@ up:
 down: 
 related: 
 opposite: 
-Create: 2024-04-23
+Create: 
 by: 
-due-date: 
 rank: 
 tags:
   - Incubation🌱
@@ -39,34 +38,6 @@ class LinkedList:
         new_node = Node(val)
         new_node.set_next(self.head)
         self.head = new_node
-
-    def exist(self, val):
-        current = self.head
-        while current:
-            if current.get_val() == val:
-                return True
-            current = current.get_next()
-        return False
-
-    def print_list(self):
-        current = self.head
-        while current:
-            print(current.get_val(), end=" ")
-            current = current.get_next()
-        print()
-
-
-# Testing the LinkedList class
-if __name__ == "__main__":
-    list = LinkedList(5)
-    list.insert(4)
-    list.insert(3)
-    list.insert(6)
-    print("6 is in linked list:", list.exist(6))
-    print("16 is not in linked list:", list.exist(16))
-    list.print_list()
-    print("done")
-
 ```
 
 - add
