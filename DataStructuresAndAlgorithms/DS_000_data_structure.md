@@ -1,18 +1,16 @@
 ---
-in: 
+Create: 2024-04-21
+in:
+  - "[[DS_003_array_list_impl]]"
 up: 
 down: 
 related: 
 opposite: 
-Create: 2024-04-21
-by: 
-due-date: 
-rank: 
-tags:
-  - Incubation🌱
+by:
 ---
 How to learn data structure
 ?
+1234
 - data type
 - structure
 - CRUD
@@ -40,4 +38,10 @@ The physical structure shows how the data is stored in computer memory. It is he
 
 
 ## Incubation area
+
+How to learn data structure
+?
+- data type
+- structure
+- CRUD
 
