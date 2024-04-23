@@ -1,10 +1,14 @@
 ---
-tags:
-  - CS
-sr-due: 2024-03-07
-sr-interval: 1
-sr-ease: 230
+Create: 2024-04-02
+in: 
+up: 
+down: 
+related: 
+opposite: 
+by:
 ---
+
+
 ## What is an array list?
 
 Array list is also called list (python) or Vector (C++). It's a data structure which can auto-expansion by itself. And cost continuous memory.
