@@ -10,7 +10,7 @@ by:
 What is memory
 ?
 - 1
-- 2
+- 234
 - 3
 
 Random access memory (RAM) is like a big grid.
