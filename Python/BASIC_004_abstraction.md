@@ -23,7 +23,7 @@ lion.move()
 print("Lion's current position:", lion.m_position)
 
 ```
-
+124
 ## Errors
 
 ```python
