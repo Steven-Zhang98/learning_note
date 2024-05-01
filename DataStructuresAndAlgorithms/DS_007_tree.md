@@ -5,7 +5,6 @@ tags:
 ```python
 class tree
 	pass
-1
 	def level_order(root: TreeNode):
 		queue = [root]
 		res = []
