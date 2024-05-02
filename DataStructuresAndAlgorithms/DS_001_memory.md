@@ -11,7 +11,6 @@ What is memory
 ?
 - 1
 - 2
-
 - 3
 
 Random access memory (RAM) is like a big grid.
