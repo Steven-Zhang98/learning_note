@@ -5,7 +5,6 @@ sr-ease: 250
 ---
 Why do we call int? Float? Double? String?
 
-1
 ## Binary
 
 
