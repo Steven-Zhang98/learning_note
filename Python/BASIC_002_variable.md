@@ -3,7 +3,7 @@ sr-due: 2023-11-11
 sr-interval: 2
 sr-ease: 250
 ---
-Why do we call int? Float? Double? String?
+1Why do we call int? Float? Double? String?
 
 ## Binary
 
