@@ -17,4 +17,3 @@ input("Press enter to quite")
 done = True
 ```
 
-1
