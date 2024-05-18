@@ -12,7 +12,7 @@ if __name__ == '__main__':
 	print(stu_1.name, stu_1.score)
 	
 ``` 
-1
+
  ```python
 class Student:
 	def __init__(self, name='', score = 0):
