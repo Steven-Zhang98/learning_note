@@ -19,5 +19,5 @@ def is_even(number):
 	return (number & 1)
 ```
 I optimised the program based on false assumptions without enough information when I didn't know if the bits were arranged from smallest to largest or from largest to smallest. Optimising ahead of time wasted my time and reduced the readability of the code.
-
+1
 ## Readable is the most important things
