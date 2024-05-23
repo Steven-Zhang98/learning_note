@@ -18,6 +18,6 @@ def is_even(number):
 # If the number is even, then the function will return false 
 	return (number & 1)
 ```
-I optimised the program based on false assumptions without enough information when I didn't know if the bits were arranged from smallest to largest or from largest to smallest. Optimising ahead of time wasted my time and reduced the readability of the code.
-1
+I optimised the program based on false assumptions without enough information when I needed to know if the bits were arranged from smallest to largest or from largest to smallest. Optimising ahead of time wasted my time and reduced the readability of the code.
+
 ## Readable is the most important things
