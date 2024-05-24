@@ -9,7 +9,7 @@ sr-interval: 13
 sr-ease: 190
 ---
 # Note on The Zen of Python (Xiyun's edition)
-1
+
 ## Create a model and then optimise
 
 ```python
