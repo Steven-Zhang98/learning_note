@@ -14,7 +14,7 @@ Python static method, class method
 额外有空才看这个高级 OO： https://github.com/mincongzhang/MentoringMaterial/blob/main/AdvancedObjectOriented/AbstractClassAndVirtual.md
 
 Python 剩余知识点全部学完
-
+1
 https://python-course.eu/python-tutorial/
 
 List comprehension
