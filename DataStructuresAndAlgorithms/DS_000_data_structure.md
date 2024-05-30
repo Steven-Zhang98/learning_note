@@ -11,7 +11,7 @@ by:
 The data structure is a structure for computers to store and operate data.
 1234
 The key to learning data structure is to ask.
-?
+?13
 - What data types are stored in this data structure?
 - What is the structure of these data?
 - How to manipulate this data?
