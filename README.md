@@ -3,7 +3,7 @@
 ## To-do list
 
 毕业设计
-
+1
 Python static method, class method
 
 数据结构, queue, stack, priority queue, deque, etc. 了解内部构造, 内存使用优缺点, 和大致算法, 写文章介绍, 不需要手写代码 (1,2 天)
