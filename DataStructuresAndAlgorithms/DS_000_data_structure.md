@@ -8,13 +8,8 @@ related:
 opposite: 
 by:
 ---
-The data structure is a structure for computers to store and operate data.
+The data structure is a structure to store fundamental data types. All the data structures are made of arrays and linked lists. 
 
-The key to learning data structure is to ask.
-
-- What data types are stored in this data structure?
-- What is the structure of these data?
-- How to manipulate this data?
 
 ## The basic function of data structure 
 CRUD
