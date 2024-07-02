@@ -1,18 +1,3 @@
----
-Create: 
-in: 
-up: 
-down: 
-related: 
-opposite: 
-by:
----
-What is memory
-?
-- 1
-- 2
-- 3
-
 Random access memory (RAM) is like a big grid.
 Every grid stores 1 byte of data. (11110000)
 64-bit systems have 2 to the power of 64 addresses.
