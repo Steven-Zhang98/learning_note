@@ -24,8 +24,4 @@ We use stack to store variables and heap to store objects.
 
 ![image.png](https://obsidianpicture-1320276993.cos.ap-hongkong.myqcloud.com/Obsidian/Picture/202404221632166.png)
 
-## Incubation area
 
-What is memory
-?
-1342
