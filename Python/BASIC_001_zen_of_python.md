@@ -1,13 +1,3 @@
----
-sr-due: 2023-11-30
-sr-interval: 1
-sr-ease: 210
-tags:
-  - CS
-sr-due: 2024-03-19
-sr-interval: 13
-sr-ease: 190
----
 # Note on The Zen of Python (Xiyun's edition)
 
 ## Create a model and then optimise
