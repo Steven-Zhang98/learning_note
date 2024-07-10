@@ -1,7 +1,5 @@
----
-tags:
-  - CS
----
+Imagine you have a large dataset, like a phone book with thousands of names. You need to be able to quickly find a specific name, add new names, and remove outdated ones. If you were to use a simple list, these operations could become very slow as the dataset grows.
+
 ```python
 class tree
 	pass
