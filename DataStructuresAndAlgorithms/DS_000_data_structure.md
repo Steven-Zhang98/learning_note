@@ -1,13 +1,4 @@
----
-Create: 2024-04-21
-in:
-  - "[[DS_003_array_list_impl]]"
-up: 
-down: 
-related: 
-opposite: 
-by:
----
+
 The data structure is a structure to store fundamental data types. All the data structures are made of arrays and linked lists. 
 We use appropriate data structure and algorithm to solve the problem in CS. 
 Divided and conquering is a good strategy for solving problems.
