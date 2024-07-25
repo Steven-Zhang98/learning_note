@@ -2,8 +2,6 @@
 
 ## To-do list
 
-
-1
 数据结构, queue, stack, priority queue, deque, etc. 了解内部构造, 内存使用优缺点, 和大致算法, 写文章介绍, 不需要手写代码 (1,2 天)
 广度优先 (用以前的二叉树尝试写广度优先 Breath first search, 也叫 level order traverse) (1,2 天)
 剩余 Python 内容
