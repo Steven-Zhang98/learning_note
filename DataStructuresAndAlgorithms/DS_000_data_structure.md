@@ -1,7 +1,7 @@
 
 The data structure is a structure to store fundamental data types. All the data structures are made of arrays and linked lists. 1
 We use appropriate data structure and algorithm to solve the problem in CS. 
-Divided and conquering is a good strategy for solving problems.
+Divided and conquering is a good strategy for solving problems.1
 
 ## The basic function of data structure 
 CRUD
